@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gyuhyeong Kim</title>
+  <meta name="description" content="Gyuhyeong (Giana) Kim, Information Systems student at HKUST. I build AI agents, automation and data tools, mostly for finance and operations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply a saved language choice before paint. Storage can be unavailable; ignore errors.
+    try {
+      var saved = localStorage.getItem("lang");
+      if (saved === "ko" || saved === "en") document.documentElement.lang = saved;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main"><span lang="en">Skip to content</span><span lang="ko">본문으로 건너뛰기</span></a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <nav aria-label="Sections">
+        <ul>
+          <li><a href="#projects"><span lang="en">Projects</span><span lang="ko">프로젝트</span></a></li>
+          <li><a href="#experience"><span lang="en">Experience</span><span lang="ko">경력</span></a></li>
+          <li><a href="#skills"><span lang="en">Skills</span><span lang="ko">기술</span></a></li>
+          <li><a href="#contact"><span lang="en">Contact</span><span lang="ko">연락</span></a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle" type="button" id="lang-toggle" aria-label="한국어로 보기">
+        <span lang="en">한국어</span><span lang="ko">English</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <!-- Hero -->
+      <div class="hero">
+        <h1><span lang="en">Gyuhyeong Kim</span><span lang="ko">김규형</span></h1>
+        <p class="alt-name"><span lang="en">김규형 · Giana</span><span lang="ko">Gyuhyeong (Giana) Kim</span></p>
+        <p class="lede">
+          <span lang="en">I build AI agents and automation that take repetitive work off people's hands, mostly in finance and operations. I usually start as the planner and end up wiring, testing and shipping the thing.</span>
+          <span lang="ko">반복되는 일을 AI 에이전트와 자동화로 바꾸는 일을 합니다. 주로 금융과 운영 분야입니다. 보통 기획으로 시작해서, 직접 연결하고 검증하고 배포하는 데까지 갑니다.</span>
+        </p>
+        <p class="meta">
+          <span lang="en">BBA in Information Systems, HKUST · Expected graduation December 2027 · Korean, English, French</span>
+          <span lang="ko">홍콩과학기술대학교(HKUST) 경영학부 정보시스템 전공 · 2027년 12월 졸업 예정 · 한국어, 영어, 프랑스어</span>
+        </p>
+        <ul class="links">
+          <li><a href="mailto:gyuhyeongkim412@gmail.com">gyuhyeongkim412@gmail.com</a></li>
+          <li><a href="https://github.com/Giana0412">github.com/Giana0412</a></li>
+          <li><a href="https://www.linkedin.com/in/gyuhyeong-kim">linkedin.com/in/gyuhyeong-kim</a></li>
+        </ul>
+      </div>
+
+
+      <section class="highlights" aria-label="Highlights">
+        <ul>
+          <li><strong><span lang="en">Production agent pipeline</span><span lang="ko">프로덕션 에이전트 파이프라인</span></strong><span lang="en">Owned OAO's event research pipeline from design to production rollout.</span><span lang="ko">OAO 이벤트 리서치 파이프라인을 설계부터 프로덕션 이관까지 맡았습니다.</span></li>
+          <li><strong><span lang="en">Daily market pipeline</span><span lang="ko">매일 도는 시장 파이프라인</span></strong><span lang="en">quant_auto runs every morning; built and run alone.</span><span lang="ko">quant_auto는 매일 아침 돕니다. 혼자 만들고 운영합니다.</span></li>
+          <li><strong><span lang="en">“Best Project Team”</span><span lang="ko">“프로젝트 최우수팀”</span></strong><span lang="en">And “Best Project Trainee”, Multicampus bootcamp, May 2026.</span><span lang="ko">그리고 “프로젝트 최우수 훈련생”, 멀티캠퍼스 부트캠프, 2026년 5월.</span></li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" aria-labelledby="projects-h">
+        <h2 id="projects-h"><span lang="en">Selected projects</span><span lang="ko">주요 프로젝트</span></h2>
+        <div class="projects">
+
+          <!-- 1. Event research pipeline -->
+          <article class="project">
+            <h3><span lang="en">Event research pipeline</span><span lang="ko">이벤트 리서치 파이프라인</span></h3>
+            <p class="summary"><span lang="en">Agent pipeline that finds events and loads them into OAO's production database without manual data entry. I owned it end to end.</span><span lang="ko">대회·행사 정보를 사람 손 없이 찾아 OAO 프로덕션 DB에 채우는 에이전트 파이프라인. 처음부터 끝까지 맡았습니다.</span></p>
+            <p class="meta"><span lang="en">OAO Corp. internship · Jul – Oct 2026</span><span lang="ko">OAO 인턴 · 2026년 7월 ~ 10월</span></p>
+            <ul class="points">
+              <li><span lang="en">Owned design, implementation, production rollout and the hand-over document.</span><span lang="ko">설계, 구현, 프로덕션 이관, 운영 인계 문서까지 맡았습니다.</span></li>
+              <li><span lang="en">The LLM only proposes; code independently checks whether a change may be written.</span><span lang="ko">LLM은 제안만 하고, 반영 여부는 코드가 따로 확인합니다.</span></li>
+              <li><span lang="en">Report numbers come from code, not the model's own summary.</span><span lang="ko">리포트 숫자는 모델의 자기보고가 아니라 코드 집계입니다.</span></li>
+            </ul>
+            <ul class="tags">
+                  <li>Python</li><li>LLM APIs</li><li>cron</li><li>n8n</li><li>Claude Code</li>
+                </ul>
+            <p class="repo"><span class="private"><span lang="en">Company code, not public.</span><span lang="ko">회사 코드라 공개하지 않습니다.</span></span></p>
+            <details>
+              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+              <dl>
+              <dt><span lang="en">What</span><span lang="ko">무엇</span></dt>
+              <dd>
+                <span lang="en">An agent pipeline that finds competitions and events, enriches them with organizer details, and loads them into the company's production database without manual data entry. Stages: discover → enrich → org-enrich → adjudicate.</span>
+                <span lang="ko">대회·행사 정보를 사람 손 없이 찾아 주최사 정보까지 보강한 뒤 회사 프로덕션 DB에 채우는 에이전트 파이프라인. 단계는 discover → enrich → org-enrich → adjudicate.</span>
+              </dd>
+              <dt><span lang="en">Role</span><span lang="ko">역할</span></dt>
+              <dd>
+                <span lang="en">Owned it end to end: design, implementation, production rollout, and the operations hand-over document at the end of the internship.</span>
+                <span lang="ko">설계, 구현, 프로덕션 이관, 인턴 종료 때의 운영 인계 문서까지 처음부터 끝까지 맡았습니다.</span>
+              </dd>
+              <dt><span lang="en">How</span><span lang="ko">어떻게</span></dt>
+              <dd>
+                <ul>
+                  <li lang="en">Started as an n8n workflow, then rebuilt it as a scheduled Python pipeline.</li>
+                  <li lang="ko">n8n 워크플로로 시작했다가 스케줄로 도는 Python 파이프라인으로 다시 만들었습니다.</li>
+                  <li lang="en">Rule: the LLM only proposes; code independently checks whether a change may be written. Report numbers come from code, not from the model's own summary.</li>
+                  <li lang="ko">원칙: LLM은 제안만 하고, 반영해도 되는지는 코드가 따로 확인한다. 리포트 숫자는 모델의 자기보고가 아니라 코드 집계로 낸다.</li>
+                  <li lang="en">A fix counted as done only after the job ran cleanly several days in a row.</li>
+                  <li lang="ko">고친 직후가 아니라 며칠 연속 정상 동작을 확인한 뒤에 완료로 처리했습니다.</li>
+                </ul>
+              </dd>
+            </dl>
+            </details>
+          </article>
+
+          <!-- 2. OAO knowledge wiki + agent constitution -->
+          <article class="project">
+            <h3><span lang="en">Team knowledge wiki and agent rules</span><span lang="ko">팀 지식 위키와 에이전트 규칙</span></h3>
+            <p class="summary"><span lang="en">An LLM-maintained team wiki, then rules for the company's AI agents enforced in code rather than left as a document.</span><span lang="ko">LLM이 유지하는 팀 지식 위키, 그리고 회사 AI 에이전트의 규칙을 문서가 아니라 코드로 강제하는 장치.</span></p>
+            <p class="meta"><span lang="en">OAO Corp. internship · Aug – Oct 2026</span><span lang="ko">OAO 인턴 · 2026년 8월 ~ 10월</span></p>
+            <ul class="points">
+              <li><span lang="en">Wiki: wrote the proposal and prototype; designed and validated the git sync.</span><span lang="ko">위키: 제안서와 프로토타입을 만들고 git 동기화를 설계·검증했습니다.</span></li>
+              <li><span lang="en">Ran the company-wide onboarding session.</span><span lang="ko">전사 온보딩 세션을 진행했습니다.</span></li>
+              <li><span lang="en">Rules: built a sandbox with deny rules, per-agent budgets and a read-only dry run.</span><span lang="ko">규칙: deny 규칙, 에이전트별 예산, 읽기 전용 dry-run을 갖춘 샌드박스를 만들었습니다.</span></li>
+            </ul>
+            <ul class="tags">
+                  <li>Obsidian</li><li>Git hooks</li><li>Python</li><li>Claude Code</li><li>Claude Haiku / Sonnet</li>
+                </ul>
+            <p class="repo"><span class="private"><span lang="en">Company work, not public.</span><span lang="ko">회사 작업이라 공개하지 않습니다.</span></span></p>
+            <details>
+              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+              <dl>
+              <dt><span lang="en">What</span><span lang="ko">무엇</span></dt>
+              <dd>
+                <span lang="en">A shared knowledge wiki maintained by LLM agents (the Karpathy "LLM Wiki" pattern on Obsidian), followed by a set of rules ("constitution") that the company's AI agents and automated jobs have to follow, enforced in code rather than left as a document.</span>
+                <span lang="ko">LLM 에이전트가 정리·유지하는 팀 지식 위키(Obsidian 위의 Karpathy "LLM Wiki" 패턴), 그리고 회사의 AI 에이전트와 자동화 잡이 지켜야 할 규칙("헌법")을 문서가 아니라 코드로 강제하는 장치.</span>
+              </dd>
+              <dt><span lang="en">Role</span><span lang="ko">역할</span></dt>
+              <dd>
+                <ul>
+                  <li lang="en">Wiki: wrote the proposal and the first prototype, then designed and validated the git sync policy, built the skills and collection scripts, and ran the company-wide onboarding session. The team lead owned the final wiki design.</li>
+                  <li lang="ko">위키: 도입 제안서와 첫 프로토타입을 만들고, git 동기화 정책을 설계·검증하고, 스킬과 수집 스크립트를 구현하고, 전사 온보딩 세션을 진행했습니다. 위키 본 설계는 팀 리드가 맡았습니다.</li>
+                  <li lang="en">Constitution: did the design, testing and implementation; direction and approval came from the team lead. Drafted the rules, tested with dilemma questions whether rule wording changes model decisions, and built a sandbox with deny rules, a git check that only humans edit the rules, per-agent budgets, and a read-only dry run against real data.</li>
+                  <li lang="ko">헌법: 설계·검증·구현을 맡았고, 방향과 승인은 팀 리드가 했습니다. 규칙 초안을 쓰고, 딜레마 문항으로 규칙 문장이 모델 판단을 바꾸는지 시험하고, deny 규칙·사람만 규칙을 고쳤는지 확인하는 git 검사·에이전트별 예산·실제 데이터 읽기 전용 dry-run을 갖춘 샌드박스를 만들었습니다.</li>
+                </ul>
+              </dd>
+              <dt><span lang="en">Outcome</span><span lang="ko">결과</span></dt>
+              <dd>
+                <span lang="en">Reported the test results as they were: the rules changed model judgment only on company-specific questions, not general ones. Shared the draft company-wide before the internship ended.</span>
+                <span lang="ko">시험 결과는 있는 그대로 보고했습니다. 규칙은 일반 판단이 아니라 회사 고유 기준 문항에서만 차이를 냈습니다. 인턴 종료 전에 초안을 전사에 공유했습니다.</span>
+              </dd>
+            </dl>
+            </details>
+          </article>
+
+          <!-- 3. quant_auto -->
+          <article class="project">
+            <h3>quant_auto</h3>
+            <p class="summary"><span lang="en">Market-research pipeline that runs every morning and sends a Telegram briefing before the Korean market opens. Built and run alone.</span><span lang="ko">매일 아침 돌아 한국장 개장 전에 텔레그램 브리핑을 보내는 시장 리서치 파이프라인. 혼자 만들고 운영합니다.</span></p>
+            <p class="meta"><span lang="en">Personal project · Aug 2026 – present</span><span lang="ko">개인 프로젝트 · 2026년 8월 ~</span></p>
+            <ul class="points">
+              <li><span lang="en">Rotation, screening, a 5–7 stock model book and self-scoring paper tracking.</span><span lang="ko">로테이션, 스크리닝, 5 ~ 7종목 모델 북, 스스로 채점하는 페이퍼 트래킹.</span></li>
+              <li><span lang="en">Ordered job chain with timeouts, locks and an outside watchdog.</span><span lang="ko">타임아웃·락이 있는 순차 잡 체인과 체인 밖 감시견.</span></li>
+              <li><span lang="en">Withdrew a backtest-based parameter choice when 12 samples swung with window alignment.</span><span lang="ko">12회 표본이 창 정렬에 따라 흔들리자 백테스트로 고른 파라미터 근거를 철회했습니다.</span></li>
+            </ul>
+            <ul class="tags">
+                  <li>Python</li><li>Shell</li><li>macOS launchd</li><li>yfinance</li><li>gs-quant</li><li>Gmail IMAP</li><li>Telegram</li><li>PyTorch</li>
+                </ul>
+            <p class="repo"><a href="https://github.com/Giana0412/quant_auto">github.com/Giana0412/quant_auto</a></p>
+            <details>
+              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+              <dl>
+              <dt><span lang="en">What</span><span lang="ko">무엇</span></dt>
+              <dd>
+                <span lang="en">A market-research pipeline that runs every morning: archives newsletters, takes a market snapshot, writes the day's conclusions, runs a health check, and sends a briefing to Telegram before the Korean market opens.</span>
+                <span lang="ko">매일 아침 도는 시장 리서치 파이프라인. 뉴스레터를 모으고, 시장 스냅샷을 찍고, 오늘의 결론을 쓰고, 헬스체크를 거쳐 한국장 개장 전에 텔레그램으로 브리핑을 보냅니다.</span>
+              </dd>
+              <dt><span lang="en">Role</span><span lang="ko">역할</span></dt>
+              <dd>
+                <span lang="en">Built and run alone.</span>
+                <span lang="ko">혼자 만들고 운영합니다.</span>
+              </dd>
+              <dt><span lang="en">What's in it</span><span lang="ko">들어 있는 것</span></dt>
+              <dd>
+                <ul>
+                  <li lang="en">Sector and style rotation, stock screening, a 5–7 stock model book with correlation filters and position caps, news sentiment, and paper tracking that records and scores its own calls.</li>
+                  <li lang="ko">섹터·스타일 로테이션, 종목 스크리닝, 상관 필터와 비중 상한을 둔 5 ~ 7종목 모델 북, 뉴스 센티멘트, 파이프라인이 자기 판단을 기록하고 채점하는 페이퍼 트래킹.</li>
+                  <li lang="en">Evening jobs chained in order with timeouts and locks after a silent failure; a watchdog outside the chain.</li>
+                  <li lang="ko">조용한 실패를 겪은 뒤 저녁 잡을 타임아웃·락이 있는 순차 체인으로 묶고, 체인 밖 감시견을 뒀습니다.</li>
+                  <li lang="en">Withdrew a backtest-based parameter choice when the 12-sample result swung with window alignment.</li>
+                  <li lang="ko">12회 표본 백테스트 결과가 창 정렬에 따라 흔들리자, 그 결과로 고른 파라미터의 근거를 스스로 철회했습니다.</li>
+                </ul>
+              </dd>
+            </dl>
+            </details>
+          </article>
+
+          <!-- 4. AlphaProbe -->
+          <article class="project">
+            <h3><span lang="en">AlphaProbe: multi-agent investment evaluation</span><span lang="ko">알파프로브: 멀티에이전트 투자 평가</span></h3>
+            <p class="summary"><span lang="en">Committee-style multi-agent LLM system that evaluates 30 Korean semiconductor companies. Won “Best Project Team”.</span><span lang="ko">국내 반도체 상장사 30곳을 평가하는 위원회형 멀티에이전트 LLM 시스템. “프로젝트 최우수팀” 수상.</span></p>
+            <p class="meta"><span lang="en">Multicampus bootcamp · Apr – May 2026 · team of 4</span><span lang="ko">멀티캠퍼스 부트캠프 · 2026년 4월 ~ 5월 · 4인 팀</span></p>
+            <ul class="points">
+              <li><span lang="en">Team lead; owned the Market and Issue agents.</span><span lang="ko">팀장, Market·Issue 에이전트 담당.</span></li>
+              <li><span lang="en">Report time cut from 30 minutes to 3 minutes (about 3 min 40 s per company).</span><span lang="ko">보고서 작성 시간 30분 → 3분(기업 1개당 약 3분 40초).</span></li>
+              <li><span lang="en">Backtest: DMA momentum +39% vs +19% simple momentum, before transaction costs.</span><span lang="ko">백테스트: DMA 모멘텀 +39%, 단순 모멘텀 +19%(거래 비용 미반영).</span></li>
+            </ul>
+            <ul class="tags">
+                  <li>Python</li><li>LangGraph</li><li>OpenAI API</li><li>Gemini API</li><li>DART API</li><li>SQLite</li><li>Excel</li>
+                </ul>
+            <p class="repo"><span lang="en">Contest version (includes bootcamp history):</span><span lang="ko">공모전 버전(부트캠프 이력 포함):</span> <a href="https://github.com/Giana0412/jbproject">github.com/Giana0412/jbproject</a></p>
+            <details>
+              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+              <dl>
+              <dt><span lang="en">What</span><span lang="ko">무엇</span></dt>
+              <dd>
+                <span lang="en">A committee-style multi-agent LLM system that evaluates 30 listed Korean semiconductor deep-tech companies: domain agents analyse, an Auditor checks, a Chair combines. Agent weights are updated with Dynamic Model Averaging (DMA).</span>
+                <span lang="ko">국내 반도체 딥테크 상장사 30곳의 투자 가치를 평가하는 위원회형 멀티에이전트 LLM 시스템. 도메인 에이전트가 분석하고, Auditor가 검증하고, Chair가 통합합니다. 에이전트 가중치는 DMA(Dynamic Model Averaging)로 갱신합니다.</span>
+              </dd>
+              <dt><span lang="en">Role</span><span lang="ko">역할</span></dt>
+              <dd>
+                <ul>
+                  <li lang="en">Team lead (presentation and documentation) and owner of the Market and Issue agents.</li>
+                  <li lang="ko">팀장(발표·문서), Market·Issue 에이전트 담당.</li>
+                  <li lang="en">Extended the Market agent from 5 to 30 companies with automatic DART code mapping, and fixed unstable value-chain classification.</li>
+                  <li lang="ko">DART 기업코드 자동 매핑으로 Market 에이전트 대상을 5곳에서 30곳으로 넓히고, 실행마다 흔들리던 밸류체인 분류를 바로잡았습니다.</li>
+                  <li lang="en">Flagged look-ahead bias (no date cut-off) in the data and added a cut-off.</li>
+                  <li lang="ko">날짜 컷오프가 없어 미래 데이터를 읽는 look-ahead bias를 찾아 컷오프를 넣었습니다.</li>
+                  <li lang="en">Cut the time to collect data, analyse and write a report from 30 minutes to 3 minutes (about 3 min 40 s per company in the final presentation).</li>
+                  <li lang="ko">데이터 수집·분석·보고서 작성 시간을 30분에서 3분으로 줄였습니다(최종 발표 기준 기업 1개당 약 3분 40초).</li>
+                  <li lang="en">Replaced fixed agent weights with DMA. In the final presentation's backtest, DMA momentum returned +39% vs +19% for simple momentum, before transaction costs.</li>
+                  <li lang="ko">고정 가중치를 DMA 동적 가중치로 다시 설계했습니다. 최종 발표 백테스트에서 DMA 모멘텀 +39%, 단순 모멘텀 +19%였습니다(거래 비용 미반영).</li>
+                  <li lang="en">First author of an abstract on the system, proposing an evidence–contribution agreement (GAA) metric.</li>
+                  <li lang="ko">이 시스템에 대한 초록의 제1저자. 근거-기여도 일치율(GAA) 지표를 제안했습니다.</li>
+                </ul>
+              </dd>
+              <dt><span lang="en">Outcome</span><span lang="ko">결과</span></dt>
+              <dd>
+                <span lang="en">“Best Project Team” for the team and “Best Project Trainee” for me (Multicampus, May 2026). The team later adapted the system for the JB Financial Group contest, with me as PM.</span>
+                <span lang="ko">“프로젝트 최우수팀”(팀)과 “프로젝트 최우수 훈련생”(개인) 수상(멀티캠퍼스, 2026년 5월). 이후 같은 팀이 JB금융그룹 공모전용으로 확장했고, 저는 PM을 맡았습니다.</span>
+              </dd>
+            </dl>
+            </details>
+          </article>
+
+          <!-- 5. Mirae disclosure agent -->
+          <article class="project">
+            <h3><span lang="en">Disclosure Q&amp;A agent</span><span lang="ko">공시 Agent</span></h3>
+            <p class="summary"><span lang="en">Agent that answers questions about Korean corporate filings with the supporting filing attached, keeping invented numbers out.</span><span lang="ko">기업 공시 질문에 근거 공시를 붙여 답하고, 지어낸 숫자가 들어가지 않게 한 에이전트.</span></p>
+            <p class="meta"><span lang="en">10th Mirae Asset Securities AI Festival · Jul – Sep 2026 · team of 2</span><span lang="ko">제10회 미래에셋증권 AI Festival · 2026년 7월 ~ 9월 · 2인 팀</span></p>
+            <ul class="points">
+              <li><span lang="en">Planning and PM: scope, feature spec, meetings.</span><span lang="ko">기획·PM: 범위, 기능명세서, 회의.</span></li>
+              <li><span lang="en">Built the deterministic layer: correction chains, SQLite ledger, full-text search.</span><span lang="ko">결정론 계층 구현: 정정 공시 체인, SQLite 원장, 전문 검색.</span></li>
+              <li><span lang="en">Code fixes evidence and numbers; the LLM only writes the prose.</span><span lang="ko">근거와 숫자는 코드가 확정하고, LLM은 서술만 맡습니다.</span></li>
+            </ul>
+            <ul class="tags">
+                  <li>Python</li><li>SQLite FTS5</li><li>lxml</li><li>HyperCLOVA X</li><li>Docker</li>
+                </ul>
+            <p class="repo"><span class="private"><span lang="en">Repository is private.</span><span lang="ko">저장소는 비공개입니다.</span></span></p>
+            <details>
+              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+              <dl>
+              <dt><span lang="en">What</span><span lang="ko">무엇</span></dt>
+              <dd>
+                <span lang="en">An agent that answers questions about Korean corporate filings with the supporting filing attached. It blocks investment-advice questions, resists prompt injection, and keeps invented numbers out of answers. Final answers had to come from HyperCLOVA X.</span>
+                <span lang="ko">기업 공시에 대한 질문에 근거 공시를 붙여 답하는 에이전트. 투자자문 질문은 막고, 프롬프트 주입을 막고, 지어낸 숫자가 답에 들어가지 않게 했습니다. 최종 답변은 HyperCLOVA X를 써야 하는 규정이었습니다.</span>
+              </dd>
+              <dt><span lang="en">Role</span><span lang="ko">역할</span></dt>
+              <dd>
+                <ul>
+                  <li lang="en">Planning and PM: scoped the idea, wrote the feature spec, ran meetings and notes.</li>
+                  <li lang="ko">기획·PM: 아이디어 범위를 정하고, 기능명세서를 쓰고, 회의와 기록을 진행했습니다.</li>
+                  <li lang="en">Built the deterministic layer: rebuilt correction chains between filings, a SQLite ledger with “known on” and “effective on” dates, full-text search over periodic reports, and an evaluation API server.</li>
+                  <li lang="ko">결정론 계층 구현: 정정 공시 체인 복원, “알려진 날”과 “유효한 날”을 함께 기록하는 SQLite 원장, 정기공시 전문 검색, 평가용 API 서버.</li>
+                  <li lang="en">QA before submission: rebuilt and verified the teammate's branch from scratch and fixed answer bugs.</li>
+                  <li lang="ko">제출 전 QA: 팀원 브랜치를 처음부터 다시 빌드해 검증하고 답변 버그를 고쳤습니다.</li>
+                </ul>
+              </dd>
+              <dt><span lang="en">Key decision</span><span lang="ko">핵심 판단</span></dt>
+              <dd>
+                <span lang="en">About a quarter of the corpus amended other filings, so filings were modelled as a time-ordered ledger of facts. Code fixes the evidence and numbers; the LLM only writes the prose.</span>
+                <span lang="ko">코퍼스의 약 4분의 1이 다른 문서를 고친 정정 공시였기 때문에, 공시를 시간 순으로 쌓인 사실 원장으로 모델링했습니다. 근거와 숫자는 코드가 확정하고, LLM은 서술만 맡습니다.</span>
+              </dd>
+            </dl>
+            </details>
+          </article>
+
+          <!-- 6. Breathin -->
+          <article class="project">
+            <h3>Breathin</h3>
+            <p class="summary"><span lang="en">Outdoor travel app for trails reachable by public transport, with missions and badges. I wrote the spec and deployed it.</span><span lang="ko">대중교통으로 갈 수 있는 산·숲길을 미션·배지와 함께 추천하는 앱. 기능명세서를 쓰고 배포했습니다.</span></p>
+            <p class="meta"><span lang="en">Korea Tourism Organization 2026 Tourism Data Contest · Jul – Sep 2026 · team of 4</span><span lang="ko">한국관광공사 2026 관광데이터 활용 공모전 · 2026년 7월 ~ 9월 · 4인 팀</span></p>
+            <ul class="points">
+              <li><span lang="en">Service planner: final feature spec, reward policy, 30-mission dataset.</span><span lang="ko">서비스 기획: 최종 기능명세서, 보상 정책, 미션 데이터 30개.</span></li>
+              <li><span lang="en">Tested every backend API, fixed bugs, deployed to AWS EC2.</span><span lang="ko">백엔드 API 전수 테스트와 버그 수정, AWS EC2 배포.</span></li>
+              <li><span lang="en">Switched to a web release when app review needed a location-service filing.</span><span lang="ko">앱 심사에 위치정보 사전 신고가 필요해지자 웹 출시로 전환.</span></li>
+            </ul>
+            <ul class="tags">
+                  <li>Expo / React Native</li><li>TypeScript</li><li>Spring Boot</li><li>MySQL</li><li>Docker Compose</li><li>AWS EC2</li><li>TourAPI</li><li>Anthropic API</li>
+                </ul>
+            <p class="repo"><span class="private"><span lang="en">Repository is private.</span><span lang="ko">저장소는 비공개입니다.</span></span></p>
+            <details>
+              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+              <dl>
+              <dt><span lang="en">What</span><span lang="ko">무엇</span></dt>
+              <dd>
+                <span lang="en">An outdoor travel app that recommends mountain and forest trails reachable by public transport, with missions, badges and a regional growth level, plus an estimate of carbon saved by not driving.</span>
+                <span lang="ko">대중교통으로 갈 수 있는 산·숲길을 추천하고, 미션·배지·지역 성장 레벨과 자가용 대비 탄소 절감량을 보여 주는 아웃도어 여행 앱.</span>
+              </dd>
+              <dt><span lang="en">Role</span><span lang="ko">역할</span></dt>
+              <dd>
+                <ul>
+                  <li lang="en">Joined as service planner: final feature spec, reward policy, per-screen requirements and the mission dataset (30 missions).</li>
+                  <li lang="ko">서비스 기획으로 합류: 최종 기능명세서, 보상 정책, 화면별 요구사항, 미션 데이터(30개).</li>
+                  <li lang="en">Ran the project: meeting schedules, agendas, notes, role split.</li>
+                  <li lang="ko">진행: 회의 일정, 안건, 회의록, 역할 분담.</li>
+                  <li lang="en">Engineering and launch: set up the repo and environment template, tested every backend API and fixed bugs, deployed to AWS EC2, and switched to a web release when the app-store review needed a location-service filing.</li>
+                  <li lang="ko">개발·출시: 저장소와 환경 템플릿을 만들고, 백엔드 API를 전수 테스트해 버그를 고치고, AWS EC2에 배포했습니다. 앱 심사에 위치정보 사전 신고가 필요해지자 웹 출시로 전환했습니다.</li>
+                </ul>
+              </dd>
+            </dl>
+            </details>
+          </article>
+
+          <!-- 7. Bloomberg team app -->
+          <article class="project">
+            <h3><span lang="en">Trading team chart app</span><span lang="ko">트레이딩 팀 차트 앱</span></h3>
+            <p class="summary"><span lang="en">Streamlit app for my HKUST Bloomberg Trading Challenge team: charts, portfolio tracker, earnings radar and a chatbot.</span><span lang="ko">HKUST Bloomberg Trading Challenge 팀용 Streamlit 앱: 차트, 포트폴리오 트래커, 실적 레이더, 챗봇.</span></p>
+            <p class="meta"><span lang="en">Bloomberg Trading Challenge · Sep – Nov 2026 · team of 3</span><span lang="ko">Bloomberg Trading Challenge · 2026년 9월 ~ 11월 · 3인 팀</span></p>
+            <ul class="points">
+              <li><span lang="en">Chatbot trades reach Google Sheets only after a person confirms.</span><span lang="ko">챗봇 거래 기록은 사람이 확인해야 Google Sheets에 들어갑니다.</span></li>
+              <li><span lang="en">Turned team decisions into screener rules in my pipeline.</span><span lang="ko">팀 결정을 제 파이프라인의 스크리너 규칙으로 옮겼습니다.</span></li>
+              <li><span lang="en">Summarised the official rules and kept a decision log.</span><span lang="ko">공식 규정을 정리하고 결정 로그를 남겼습니다.</span></li>
+            </ul>
+            <ul class="tags">
+                  <li>Python</li><li>Streamlit</li><li>Google Sheets</li><li>Gemini API</li>
+                </ul>
+            <p class="repo"><a href="https://github.com/Giana0412/bloomberg-chart-app">github.com/Giana0412/bloomberg-chart-app</a></p>
+            <details>
+              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+              <dl>
+              <dt><span lang="en">What</span><span lang="ko">무엇</span></dt>
+              <dd>
+                <span lang="en">A Streamlit app for the team: ticker charts with stop levels and signals, a portfolio tracker, an earnings radar, AI news summaries, and a team chatbot. Trades told to the chatbot are written to Google Sheets only after a person presses confirm.</span>
+                <span lang="ko">팀용 Streamlit 앱: 손절가·신호가 붙은 종목 차트, 포트폴리오 트래커, 실적 레이더, 뉴스 AI 요약, 팀 챗봇. 챗봇에 거래를 말하면 사람이 확인 버튼을 눌러야 Google Sheets에 기록됩니다.</span>
+              </dd>
+              <dt><span lang="en">Role</span><span lang="ko">역할</span></dt>
+              <dd>
+                <span lang="en">Data and tooling for the team: turned team decisions into screener rules in my pipeline (universe, sector caps, 5–7 positions), summarised the official rules, and kept a decision log.</span>
+                <span lang="ko">팀의 데이터·도구 담당: 팀 결정을 제 파이프라인의 스크리너 규칙(유니버스, 섹터 상한, 5 ~ 7종목)으로 옮기고, 공식 규정을 정리하고, 결정 로그를 남겼습니다.</span>
+              </dd>
+            </dl>
+            </details>
+          </article>
+        </div>
+
+        <div class="also">
+          <h3><span lang="en">Also</span><span lang="ko">그 밖에</span></h3>
+          <ul>
+            <li>
+              <span lang="en"><strong>Character chatbot consistency test</strong> (Jun 2026): a GPT-4o character bot with 30 automated scenarios scored as consistent / awkward / broken (67% / 30% / 3%), iterated v1 → v3.</span>
+              <span lang="ko"><strong>캐릭터 챗봇 일관성 실험</strong> (2026년 6월): GPT-4o 캐릭터 챗봇을 30개 시나리오로 자동 테스트해 일관 / 어색 / 붕괴(67% / 30% / 3%)로 집계하고 v1 → v3로 고쳤습니다.</span>
+              <a href="https://github.com/Giana0412/jungo-chatbot">jungo-chatbot</a>
+            </li>
+            <li>
+              <span lang="en"><strong>Multi-agent quant backtesting</strong> (Mar 2026, bootcamp): natural-language strategy → generated backtest → analysis → human-approved improvement → report.</span>
+              <span lang="ko"><strong>멀티에이전트 퀀트 백테스팅</strong> (2026년 3월, 부트캠프): 자연어 전략 → 백테스트 코드 생성·실행 → 성과 분석 → 사람 승인 개선 → 리포트.</span>
+            </li>
+            <li>
+              <span lang="en"><strong>Airbnb price prediction</strong> (Spring 2025, HKUST data mining course, team of 4): drafted the model description and evaluation sections of the report.</span>
+              <span lang="ko"><strong>Airbnb 가격 예측</strong> (2025년 봄, HKUST 데이터 마이닝 수업, 4인 팀): 보고서의 모델 설명과 성능 평가 파트 초안을 썼습니다.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" aria-labelledby="experience-h">
+        <h2 id="experience-h"><span lang="en">Experience</span><span lang="ko">경력</span></h2>
+        <ol class="timeline" reversed>
+          <li>
+            <span class="when"><span lang="en">Jun – Oct 2026</span><span lang="ko">2026.06 ~ 2026.10</span></span>
+            <div>
+              <div class="head"><span class="org">OAO Corp.</span> · <span class="role"><span lang="en">Product Staff (Intern)</span><span lang="ko">Product Staff (인턴)</span></span></div>
+              <p><span lang="en">AI and automation for the team: event research pipeline, team knowledge wiki and its sync, agent rules.</span><span lang="ko">팀의 AI·자동화 업무: 이벤트 리서치 파이프라인, 팀 지식 위키와 동기화, 에이전트 규칙.</span></p>
+              <details>
+                <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+                <p>
+                  <span lang="en">Full-time in Seoul over the summer, then remote part-time from Hong Kong from mid-September. Worked on AI and automation for the team: the event research pipeline, the team knowledge wiki and its sync, and agent rules.</span>
+                  <span lang="ko">여름에는 서울에서 풀타임, 9월 중순부터는 홍콩에서 원격 파트타임. 팀의 AI·자동화 업무를 맡았습니다: 이벤트 리서치 파이프라인, 팀 지식 위키와 동기화, 에이전트 규칙.</span>
+                </p>
+              </details>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">Dec 2025 – Jun 2026</span><span lang="ko">2025.12 ~ 2026.06</span></span>
+            <div>
+              <div class="head"><span class="org"><span lang="en">Multicampus Financial Data Analysis Bootcamp</span><span lang="ko">멀티캠퍼스 금융데이터분석 부트캠프</span></span> · <span class="role"><span lang="en">Trainee, final-project team lead</span><span lang="ko">훈련생, 파이널 프로젝트 팀장</span></span></div>
+              <p><span lang="en">829-hour program. “Best Project Team” and “Best Project Trainee”.</span><span lang="ko">829시간 과정. “프로젝트 최우수팀”, “프로젝트 최우수 훈련생” 수상.</span></p>
+              <details>
+                <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+                <p>
+                  <span lang="en">829-hour K-Digital Training program: statistics, machine learning, time series, NLP, LLM agents (LangChain, LangGraph), quant strategy, recommender systems. Awarded “Best Project Team” and “Best Project Trainee”.</span>
+                  <span lang="ko">829시간 K-Digital Training 과정: 통계, 머신러닝, 시계열, NLP, LLM 에이전트(LangChain, LangGraph), 퀀트 전략, 추천시스템. “프로젝트 최우수팀”, “프로젝트 최우수 훈련생” 수상.</span>
+                </p>
+              </details>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">2025 – 2026</span><span lang="ko">2025 ~ 2026</span></span>
+            <div>
+              <div class="head"><span class="org">HKUST ISOM</span> · <span class="role"><span lang="en">Undergraduate Teaching Assistant</span><span lang="ko">학부 조교</span></span></div>
+              <p><span lang="en">ISOM2010 computer lab (Spring 2025); ISOM2020 Coding for Business (Fall 2025, Fall 2026).</span><span lang="ko">ISOM2010 컴퓨터랩(2025 봄), ISOM2020 Coding for Business(2025 가을, 2026 가을).</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">Oct 2025 –</span><span lang="ko">2025.10 ~</span></span>
+            <div>
+              <div class="head"><span class="org">Microsoft</span> · <span class="role">Microsoft Student Ambassador (FY26)</span></div>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">Sep 2024 – Sep 2025</span><span lang="ko">2024.09 ~ 2025.09</span></span>
+            <div>
+              <div class="head"><span class="org"><span lang="en">HKUST Business School</span><span lang="ko">HKUST 경영대</span></span> · <span class="role"><span lang="en">Business School Ambassador</span><span lang="ko">경영대 학생 홍보대사</span></span></div>
+              <p><span lang="en">Mentored Korean and IB students and gave campus tours.</span><span lang="ko">한국·IB 출신 학생 멘토링, 캠퍼스 투어.</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">Jun – Jul 2025</span><span lang="ko">2025.06 ~ 2025.07</span></span>
+            <div>
+              <div class="head"><span class="org">Kaleidoscope Capital</span> · <span class="role"><span lang="en">Summer Analyst Training Program (participant)</span><span lang="ko">Summer Analyst Training Program 참가</span></span></div>
+              <p><span lang="en">Five-week program. Contributed to the Mid-Year 2025 Strategy Outlook Report.</span><span lang="ko">5주 프로그램. Mid-Year 2025 Strategy Outlook Report 작성에 참여했습니다.</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">May – Jul 2025</span><span lang="ko">2025.05 ~ 2025.07</span></span>
+            <div>
+              <div class="head"><span class="org">MetaCode</span> · <span class="role"><span lang="en">Business Analysis Bootcamp (completed)</span><span lang="ko">Business Analysis Bootcamp 수료</span></span></div>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">Jan – Oct 2025</span><span lang="ko">2025.01 ~ 2025.10</span></span>
+            <div>
+              <div class="head"><span class="org"><span lang="en">HKUST iGEM team</span><span lang="ko">HKUST iGEM 팀</span></span> · <span class="role"><span lang="en">Team member, Treasurer</span><span lang="ko">팀원, 재무 담당</span></span></div>
+              <p><span lang="en">Synthetic biology project on recovering cadmium from sewage-sludge ash.</span><span lang="ko">하수 슬러지 소각재에서 카드뮴을 회수하는 합성생물학 프로젝트.</span></p>
+              <details>
+                <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+                <p>
+                  <span lang="en">Took meeting minutes, worked on the team wiki (website) and logo, researched cadmium data and literature, and managed the team budget as treasurer.</span>
+                  <span lang="ko">총회 서기, 팀 위키(웹사이트)와 로고 작업, 카드뮴 데이터·문헌 조사, 재무 담당으로 팀 예산 관리를 맡았습니다.</span>
+                </p>
+              </details>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">Sep 2023 – Nov 2025</span><span lang="ko">2023.09 ~ 2025.11</span></span>
+            <div>
+              <div class="head"><span class="org"><span lang="en">KRISS (HKUST KSA Research &amp; Investment Strategy Society)</span><span lang="ko">KRISS (HKUST 한인학생회 금융 학회)</span></span> · <span class="role"><span lang="en">Member; Management Team (Feb – Nov 2025)</span><span lang="ko">회원, 운영진(MGMT) (2025.02 ~ 2025.11)</span></span></div>
+              <details>
+                <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
+                <p>
+                  <span lang="en">In Fall 2025, ran day-to-day operations: recruiting interviews, announcements, dues and budget, career sessions, and the end-of-term final presentation.</span>
+                  <span lang="ko">2025 가을학기 운영 실무: 신입 면접, 공지, 회비·예산, 커리어세션, 학기말 파이널 발표 진행.</span>
+                </p>
+              </details>
+            </div>
+          </li>
+        </ol>
+        <h3 class="subhead"><span lang="en">Education</span><span lang="ko">학력</span></h3>
+        <ol class="timeline" reversed>
+          <li>
+            <span class="when"><span lang="en">Sep 2023 – Dec 2027 (expected)</span><span lang="ko">2023.09 ~ 2027.12 (예정)</span></span>
+            <div>
+              <div class="head"><span class="org"><span lang="en">The Hong Kong University of Science and Technology</span><span lang="ko">홍콩과학기술대학교 (HKUST)</span></span> · <span class="role"><span lang="en">BBA in Information Systems</span><span lang="ko">경영학사, 정보시스템 전공</span></span></div>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">Dec 2024 – Jan 2025</span><span lang="ko">2024.12 ~ 2025.01</span></span>
+            <div>
+              <div class="head"><span class="org"><span lang="en">Korea University</span><span lang="ko">고려대학교</span></span> · <span class="role"><span lang="en">International Winter Campus (3 weeks)</span><span lang="ko">International Winter Campus (3주)</span></span></div>
+            </div>
+          </li>
+          <li>
+            <span class="when"><span lang="en">2020 – 2023</span><span lang="ko">2020 ~ 2023</span></span>
+            <div>
+              <div class="head"><span class="org"><span lang="en">ICS Paris International School</span><span lang="ko">ICS Paris 국제학교</span></span> · <span class="role"><span lang="en">IB Diploma (May 2023)</span><span lang="ko">IB Diploma (2023년 5월)</span></span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" aria-labelledby="skills-h">
+        <h2 id="skills-h"><span lang="en">Skills</span><span lang="ko">기술</span></h2>
+        <dl class="skills">
+          <div>
+            <dt><span lang="en">AI and agents</span><span lang="ko">AI·에이전트</span></dt>
+            <dd><span lang="en">LLM pipelines and multi-agent systems, LangGraph / LangChain, OpenAI, Anthropic, Gemini and HyperCLOVA X APIs, evaluation harnesses, Claude Code</span><span lang="ko">LLM 파이프라인과 멀티에이전트 시스템, LangGraph / LangChain, OpenAI·Anthropic·Gemini·HyperCLOVA X API, 평가 하네스, Claude Code</span></dd>
+          </div>
+          <div>
+            <dt><span lang="en">Engineering</span><span lang="ko">엔지니어링</span></dt>
+            <dd><span lang="en">Python, Shell, SQLite, Git, Docker, AWS EC2, Streamlit, macOS launchd / cron scheduling; frontend contributions in Expo / React Native</span><span lang="ko">Python, Shell, SQLite, Git, Docker, AWS EC2, Streamlit, macOS launchd / cron 스케줄링, Expo / React Native 프론트엔드 기여</span></dd>
+          </div>
+          <div>
+            <dt><span lang="en">Data and finance</span><span lang="ko">데이터·금융</span></dt>
+            <dd><span lang="en">pandas, statsmodels, machine learning (random forest, XGBoost), time series, backtesting, yfinance, gs-quant, DART filings data</span><span lang="ko">pandas, statsmodels, 머신러닝(랜덤 포레스트, XGBoost), 시계열, 백테스트, yfinance, gs-quant, DART 공시 데이터</span></dd>
+          </div>
+          <div>
+            <dt><span lang="en">Product</span><span lang="ko">기획</span></dt>
+            <dd><span lang="en">Feature specs, user flows, reward and pricing design, meeting facilitation and written decision records, Figma, Canva</span><span lang="ko">기능명세서, 유저 플로우, 보상·가격 설계, 회의 진행과 결정 기록, Figma, Canva</span></dd>
+          </div>
+          <div>
+            <dt><span lang="en">Languages</span><span lang="ko">언어</span></dt>
+            <dd><span lang="en">Korean (native), English (TOEIC 910), French (DELF B2), Chinese (basic)</span><span lang="ko">한국어(모국어), 영어(TOEIC 910), 프랑스어(DELF B2), 중국어(기초)</span></dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact" aria-labelledby="contact-h">
+        <h2 id="contact-h"><span lang="en">Contact</span><span lang="ko">연락</span></h2>
+        <p>
+          <span lang="en">Open to internships and co-op roles in AI automation, product and data. Email is the fastest way to reach me.</span>
+          <span lang="ko">AI 자동화, 기획, 데이터 분야의 인턴십과 코업 기회를 찾고 있습니다. 이메일이 가장 빠릅니다.</span>
+        </p>
+        <ul class="links">
+          <li><a href="mailto:gyuhyeongkim412@gmail.com">gyuhyeongkim412@gmail.com</a></li>
+          <li><a href="https://github.com/Giana0412">github.com/Giana0412</a></li>
+          <li><a href="https://www.linkedin.com/in/gyuhyeong-kim">linkedin.com/in/gyuhyeong-kim</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span lang="en">© 2026 Gyuhyeong Kim</span><span lang="ko">© 2026 김규형</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById("lang-toggle");
+      function sync() {
+        btn.setAttribute("aria-label", root.lang === "ko" ? "View in English" : "한국어로 보기");
+        document.title = root.lang === "ko" ? "김규형" : "Gyuhyeong Kim";
+      }
+      btn.addEventListener("click", function () {
+        root.lang = root.lang === "ko" ? "en" : "ko";
+        try { localStorage.setItem("lang", root.lang); } catch (e) {}
+        sync();
+      });
+      sync();
+    })();
+  </script>
+</body>
+</html>
