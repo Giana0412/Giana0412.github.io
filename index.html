@@ -4,488 +4,303 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Gyuhyeong Kim</title>
-  <meta name="description" content="Gyuhyeong (Giana) Kim, Information Systems student at HKUST. Born on Jeju, schooled in Switzerland, Qingdao and Paris, now building AI agents and automation for finance and operations.">
+  <meta name="description" content="Gyuhyeong (Giana) Kim, Information Systems at HKUST. An archive of projects along the route Jeju, Gland, Qingdao, Paris, Hong Kong and Seoul: AI agents and automation for finance and operations.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Sans+KR:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Sans:wght@400;600&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
   <script>
-    try {
-      var saved = localStorage.getItem("lang");
-      if (saved === "ko" || saved === "en") document.documentElement.lang = saved;
-    } catch (e) {}
+    try { var s = localStorage.getItem("lang"); if (s === "ko" || s === "en") document.documentElement.lang = s; } catch (e) {}
   </script>
 </head>
 <body>
-  <a class="skip" href="#main"><span lang="en">Skip to content</span><span lang="ko">본문으로 건너뛰기</span></a>
-
-  <header class="bar gut">
-    <div class="wrap">
-      <a class="me" href="#top"><span lang="en">Gyuhyeong Kim</span><span lang="ko">김규형</span></a>
-      <ol class="mini" aria-label="Route">
-        <li><a href="#jeju" style="--dc:var(--kr)" aria-label="Jeju"></a></li>
-        <li><a href="#switzerland" style="--dc:var(--ch)" aria-label="Switzerland"></a></li>
-        <li><a href="#qingdao" style="--dc:var(--qd)" aria-label="Qingdao"></a></li>
-        <li><a href="#jeju-again" style="--dc:var(--kr)" aria-label="Jeju"></a></li>
-        <li><a href="#paris" style="--dc:var(--pa)" aria-label="Paris"></a></li>
-        <li><a href="#hongkong" style="--dc:var(--hk)" aria-label="Hong Kong 2023–2025"></a></li>
-        <li><a href="#seoul" style="--dc:var(--kr)" aria-label="Seoul"></a></li>
-        <li><a href="#hongkong-now" style="--dc:var(--hk)" aria-label="Hong Kong 2026–"></a></li>
-        <li class="here-wrap"><span class="here" id="here"></span></li>
-      </ol>
-      <nav class="nav" aria-label="Sections">
-        <a href="#jeju"><span lang="en">Journey</span><span lang="ko">여정</span></a>
-        <a href="#skills"><span lang="en">Skills</span><span lang="ko">기술</span></a>
-        <a href="#contact"><span lang="en">Contact</span><span lang="ko">연락</span></a>
-      </nav>
-      <button class="lang" type="button" id="lang-toggle" aria-label="한국어로 보기"><span lang="en">한국어</span><span lang="ko">English</span></button>
+  <header class="top">
+    <button class="name" id="home" type="button"><span class="nm"></span></button>
+    <ol class="dots" id="dots" aria-label="Route"></ol>
+    <div class="tb">
+      <button class="chip" id="to-contact" type="button"></button>
+      <button class="chip" id="lang-toggle" type="button"></button>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero gut" id="top">
-      <div class="wrap">
-        <h1><span lang="en">Gyuhyeong Kim</span><span lang="ko">김규형</span></h1>
-        <div class="sub">
-          <p class="lede">
-            <span lang="en">Born on Jeju, schooled in Switzerland, Qingdao and Paris, studying in Hong Kong. I build AI agents and automation that take repetitive work off people's hands, mostly in finance and operations, and I make sure the numbers can be checked.</span>
-            <span lang="ko">제주에서 태어나 스위스, 칭다오, 파리에서 학교를 다니고, 지금은 홍콩에서 공부합니다. 반복되는 일을 AI 에이전트와 자동화로 바꾸는 일을 합니다. 주로 금융과 운영 분야이고, 숫자는 언제나 확인할 수 있게 만듭니다.</span>
-          </p>
-          <p class="facts">
-            <span><span lang="en">BBA in Information Systems, HKUST · graduating December 2027</span><span lang="ko">HKUST 경영학부 정보시스템 전공 · 2027년 12월 졸업 예정</span></span>
-            <span><span lang="en">Korean, English, French, some Chinese</span><span lang="ko">한국어, 영어, 프랑스어, 중국어 기초</span></span>
-            <span><a href="mailto:gyuhyeongkim412@gmail.com">gyuhyeongkim412@gmail.com</a> · <a href="https://github.com/Giana0412">GitHub</a> · <a href="https://www.linkedin.com/in/gyuhyeong-kim">LinkedIn</a></span>
-          </p>
-        </div>
-        <div class="map" id="map" role="img" aria-label="Route map: Jeju, Switzerland, Qingdao, Jeju, Paris, Hong Kong, Seoul, Hong Kong"></div>
-        <div class="wins">
-          <div><b><span lang="en">Top 10%</span><span lang="ko">상위 10%</span></b><span><span lang="en">of 2,916 in the AX Talent War, solo</span><span lang="ko">AX인재전쟁 2,916명 중, 개인 참가</span></span></div>
-          <div><b><span lang="en">30 → 3 min</span><span lang="ko">30분 → 3분</span></b><span><span lang="en">per company report, AlphaProbe</span><span lang="ko">기업 보고서 1건, 알파프로브</span></span></div>
-          <div><b><span lang="en">Best Team</span><span lang="ko">최우수팀</span></b><span><span lang="en">and Best Trainee, Multicampus 2026</span><span lang="ko">과 최우수 훈련생, 멀티캠퍼스 2026</span></span></div>
-          <div><b><span lang="en">In production</span><span lang="ko">프로덕션</span></b><span><span lang="en">OAO event pipeline, owned end to end</span><span lang="ko">OAO 이벤트 파이프라인, 끝까지 담당</span></span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Jeju -->
-    <section class="stop gut" id="jeju" data-city="kr" data-name-en="Jeju" data-name-ko="제주">
-      <div class="wrap">
-        <h2><span lang="en">Jeju</span><span lang="ko">제주</span></h2>
-        <span class="when"><span lang="en">2004 · where it starts</span><span lang="ko">2004 · 시작</span></span>
-        <p class="intro"><span lang="en">Born on Jeju, the island off Korea's southern coast, and started primary school in Korea.</span><span lang="ko">한국 남쪽 섬 제주에서 태어나 초등학교 2학년까지 한국에서 다녔습니다.</span></p>
-      </div>
-    </section>
-
-    <!-- Switzerland -->
-    <section class="stop gut" id="switzerland" data-city="ch" data-name-en="Switzerland" data-name-ko="스위스">
-      <div class="wrap">
-        <h2><span lang="en">Switzerland</span><span lang="ko">스위스</span></h2>
-        <span class="when"><span lang="en">Gland · La Côte International School · grades 3 to 5</span><span lang="ko">글랑 · La Côte International School · 초3 ~ 5</span></span>
-        <p class="intro"><span lang="en">Left Korea for the first time and spent grades 3 to 5 at an international school in Gland, on Lake Geneva.</span><span lang="ko">처음으로 한국을 떠나 초등학교 3학년부터 5학년까지 제네바 호숫가 마을 글랑의 국제학교를 다녔습니다.</span></p>
-      </div>
-    </section>
-
-    <!-- Qingdao -->
-    <section class="stop gut" id="qingdao" data-city="qd" data-name-en="Qingdao" data-name-ko="칭다오">
-      <div class="wrap">
-        <h2><span lang="en">Qingdao</span><span lang="ko">칭다오</span></h2>
-        <span class="when"><span lang="en">Middle school</span><span lang="ko">중학교 시절</span></span>
-        <p class="intro"><span lang="en">Grades 6 to 8 at an international school in Qingdao, China. Chinese was a required class; I still study it.</span><span lang="ko">초6부터 중2까지 중국 칭다오의 국제학교를 다녔습니다. 중국어가 필수 수업이었고, 지금도 공부하고 있습니다.</span></p>
-      </div>
-    </section>
-
-    <!-- Jeju, again -->
-    <section class="stop gut" id="jeju-again" data-city="kr" data-name-en="Jeju" data-name-ko="제주">
-      <div class="wrap">
-        <h2><span lang="en">Back to Jeju</span><span lang="ko">다시, 제주</span></h2>
-        <span class="when"><span lang="en">Middle school · Shinsung Girls' Middle School</span><span lang="ko">중학교 · 신성여자중학교</span></span>
-        <p class="intro"><span lang="en">Came home after Qingdao and finished middle school in Jeju, in a Korean school, before leaving for Paris.</span><span lang="ko">칭다오에서 돌아와 제주의 한국 학교에서 중학교를 마치고 파리로 떠났습니다.</span></p>
-      </div>
-    </section>
-
-    <!-- Paris -->
-    <section class="stop gut" id="paris" data-city="pa" data-name-en="Paris" data-name-ko="파리">
-      <div class="wrap">
-        <h2><span lang="en">Paris</span><span lang="ko">파리</span></h2>
-        <span class="when"><span lang="en">2020 – 2023 · ICS Paris</span><span lang="ko">2020 – 2023 · ICS Paris</span></span>
-        <p class="intro"><span lang="en">Finished school in English and French: the IB Diploma at ICS Paris, and French to DELF B2.</span><span lang="ko">영어와 프랑스어로 학교를 마쳤습니다. ICS Paris에서 IB 디플로마를 받고, 프랑스어는 DELF B2까지 땄습니다.</span></p>
-        <ul class="log">
-          <li><span class="d"><span lang="en">May 2023</span><span lang="ko">2023.05</span></span><div><b>ICS Paris</b> · <span class="r"><span lang="en">IB Diploma</span><span lang="ko">IB 디플로마</span></span><p><span lang="en">Higher Level: Korean A, English B, Business Management.</span><span lang="ko">HL: 한국어 A, 영어 B, 경영.</span></p></div></li>
-          <li><span class="d"><span lang="en">Aug 2022</span><span lang="ko">2022.08</span></span><div><b>DELF B2</b> · <span class="r"><span lang="en">French</span><span lang="ko">프랑스어</span></span></div></li>
-          <li><span class="d"><span lang="en">2021 – 2023</span><span lang="ko">2021 ~ 2023</span></span><div><b><span lang="en">Tutoring club, ICS Paris</span><span lang="ko">ICS Paris 튜터링 클럽</span></b> · <span class="r"><span lang="en">and World Clean-up Day volunteer with UNESCO Paris (2021)</span><span lang="ko">UNESCO 파리 World Clean-up Day 봉사(2021)</span></span></div></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Hong Kong 2023–2025 -->
-    <section class="stop gut" id="hongkong" data-city="hk" data-name-en="Hong Kong" data-name-ko="홍콩">
-      <div class="wrap">
-        <h2><span lang="en">Hong Kong</span><span lang="ko">홍콩</span></h2>
-        <span class="when"><span lang="en">2023 – 2025 · HKUST, years one and two</span><span lang="ko">2023 – 2025 · HKUST 1, 2학년</span></span>
-        <p class="intro"><span lang="en">Started a BBA at HKUST and settled on Information Systems. Most of what I learned in these years came from running things: a finance society, an iGEM team's budget, a computer lab.</span><span lang="ko">HKUST 경영학부에 들어가 정보시스템을 전공으로 정했습니다. 이 시기에 배운 것은 대부분 무언가를 운영하면서 얻었습니다. 금융 학회, iGEM 팀 예산, 컴퓨터랩.</span></p>
-        <div class="works">
-          <article class="work">
-            <h3><span lang="en">Airbnb price prediction</span><span lang="ko">Airbnb 가격 예측</span></h3>
-            <p class="meta"><span lang="en">HKUST data mining course · Spring 2025 · team of 4</span><span lang="ko">HKUST 데이터 마이닝 수업 · 2025년 봄 · 4인 팀</span></p>
-            <p><span lang="en">Drafted the model description and evaluation sections of the final report.</span><span lang="ko">기말 보고서의 모델 설명과 성능 평가 파트 초안을 썼습니다.</span></p>
-          </article>
-          <article class="work">
-            <h3>Kaleidoscope Capital</h3>
-            <p class="meta"><span lang="en">Summer Analyst Training Program · Jun – Jul 2025</span><span lang="ko">Summer Analyst Training Program · 2025년 6 ~ 7월</span></p>
-            <p><span lang="en">Five-week program. Contributed to the Mid-Year 2025 Strategy Outlook Report.</span><span lang="ko">5주 프로그램. Mid-Year 2025 Strategy Outlook Report 작성에 참여했습니다.</span></p>
-          </article>
-        </div>
-        <ul class="log">
-          <li><span class="d"><span lang="en">2025 –</span><span lang="ko">2025 ~</span></span><div><b>HKUST ISOM</b> · <span class="r"><span lang="en">Undergraduate Teaching Assistant</span><span lang="ko">학부 조교</span></span><p><span lang="en">ISOM2010 computer lab (Spring 2025); ISOM2020 Coding for Business (Fall 2025, Fall 2026).</span><span lang="ko">ISOM2010 컴퓨터랩(2025 봄), ISOM2020 Coding for Business(2025 가을, 2026 가을).</span></p></div></li>
-          <li><span class="d"><span lang="en">Oct 2025 –</span><span lang="ko">2025.10 ~</span></span><div><b>Microsoft</b> · <span class="r">Microsoft Student Ambassador (FY26)</span></div></li>
-          <li><span class="d"><span lang="en">Sep 2023 – Nov 2025</span><span lang="ko">2023.09 ~ 2025.11</span></span><div><b>KRISS</b> · <span class="r"><span lang="en">Member; Management Team (Feb – Nov 2025)</span><span lang="ko">회원, 운영진 (2025.02 ~ 11)</span></span><p><span lang="en">HKUST KSA Research &amp; Investment Strategy Society. In Fall 2025 ran recruiting interviews, dues and budget, career sessions and the final presentation.</span><span lang="ko">HKUST 한인학생회 금융 학회. 2025 가을에 신입 면접, 회비·예산, 커리어세션, 학기말 파이널 발표를 맡았습니다.</span></p></div></li>
-          <li><span class="d"><span lang="en">Jan – Oct 2025</span><span lang="ko">2025.01 ~ 10</span></span><div><b><span lang="en">HKUST iGEM team</span><span lang="ko">HKUST iGEM 팀</span></b> · <span class="r"><span lang="en">Team member, Treasurer</span><span lang="ko">팀원, 재무 담당</span></span><p><span lang="en">Recovering cadmium from sewage-sludge ash. Minutes, team wiki and logo, cadmium research, and the budget.</span><span lang="ko">하수 슬러지 소각재에서 카드뮴을 회수하는 합성생물학 프로젝트. 서기, 팀 위키와 로고, 카드뮴 조사, 예산 관리.</span></p></div></li>
-          <li><span class="d"><span lang="en">Sep 2024 – Sep 2025</span><span lang="ko">2024.09 ~ 2025.09</span></span><div><b><span lang="en">HKUST Business School</span><span lang="ko">HKUST 경영대</span></b> · <span class="r"><span lang="en">Ambassador</span><span lang="ko">학생 홍보대사</span></span><p><span lang="en">Mentored Korean and IB students and gave campus tours.</span><span lang="ko">한국·IB 출신 학생 멘토링, 캠퍼스 투어.</span></p></div></li>
-          <li><span class="d"><span lang="en">May – Jul 2025</span><span lang="ko">2025.05 ~ 07</span></span><div><b>MetaCode</b> · <span class="r"><span lang="en">Business Analysis Bootcamp (completed)</span><span lang="ko">Business Analysis Bootcamp 수료</span></span></div></li>
-          <li><span class="d"><span lang="en">Dec 2024 – Jan 2025</span><span lang="ko">2024.12 ~ 2025.01</span></span><div><b><span lang="en">Korea University</span><span lang="ko">고려대학교</span></b> · <span class="r"><span lang="en">International Winter Campus (3 weeks)</span><span lang="ko">International Winter Campus (3주)</span></span></div></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Seoul -->
-    <section class="stop gut" id="seoul" data-city="kr" data-name-en="Seoul" data-name-ko="서울">
-      <div class="wrap">
-        <h2><span lang="en">Seoul</span><span lang="ko">서울</span></h2>
-        <span class="when"><span lang="en">Dec 2025 – Oct 2026 · a semester off to build</span><span lang="ko">2025.12 – 2026.10 · 만들기 위한 휴학</span></span>
-        <p class="intro"><span lang="en">Took a semester off from HKUST to build real things: an 829-hour bootcamp, then an internship in Seoul where my work ran in production. Contests filled the evenings.</span><span lang="ko">진짜로 돌아가는 것을 만들려고 HKUST를 한 학기 쉬었습니다. 829시간 부트캠프를 마치고, 서울 인턴십에서 만든 것이 프로덕션에서 돌았습니다. 저녁에는 공모전을 했습니다.</span></p>
-        <div class="works">
-
-          <article class="work">
-            <h3><span lang="en">Event research pipeline</span><span lang="ko">이벤트 리서치 파이프라인</span></h3>
-            <p class="meta"><span lang="en">OAO Corp. internship · Jul – Oct 2026</span><span lang="ko">OAO 인턴 · 2026년 7월 ~ 10월</span></p>
-            <p><span lang="en">Agent pipeline that finds events and loads them into OAO's production database without manual data entry. I owned it end to end.</span><span lang="ko">대회·행사 정보를 사람 손 없이 찾아 OAO 프로덕션 DB에 채우는 에이전트 파이프라인. 처음부터 끝까지 맡았습니다.</span></p>
-            <ul class="pts">
-              <li><span lang="en">The LLM only proposes; code independently checks whether a change may be written.</span><span lang="ko">LLM은 제안만 하고, 반영 여부는 코드가 따로 확인합니다.</span></li>
-              <li><span lang="en">Report numbers come from code, not the model's own summary.</span><span lang="ko">리포트 숫자는 모델의 자기보고가 아니라 코드 집계입니다.</span></li>
-            </ul>
-            <ul class="tags"><li>Python</li><li>LLM APIs</li><li>cron</li><li>n8n</li><li>Claude Code</li></ul>
-            <p class="repo"><span class="priv"><span lang="en">Company code, not public.</span><span lang="ko">회사 코드라 공개하지 않습니다.</span></span></p>
-            <details>
-              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
-              <dl>
-                <dt><span lang="en">What</span><span lang="ko">무엇</span></dt>
-                <dd><span lang="en">Finds competitions and events, enriches them with organizer details, and loads them into the company's production database. Stages: discover → enrich → org-enrich → adjudicate.</span><span lang="ko">대회·행사 정보를 찾아 주최사 정보까지 보강한 뒤 회사 프로덕션 DB에 채웁니다. 단계는 discover → enrich → org-enrich → adjudicate.</span></dd>
-                <dt><span lang="en">How</span><span lang="ko">어떻게</span></dt>
-                <dd><ul>
-                  <li lang="en">Started as an n8n workflow, then rebuilt as a scheduled Python pipeline.</li>
-                  <li lang="ko">n8n 워크플로로 시작했다가 스케줄로 도는 Python 파이프라인으로 다시 만들었습니다.</li>
-                  <li lang="en">A fix counted as done only after the job ran cleanly several days in a row.</li>
-                  <li lang="ko">고친 직후가 아니라 며칠 연속 정상 동작을 확인한 뒤에 완료로 처리했습니다.</li>
-                  <li lang="en">Owned design, implementation, production rollout and the operations hand-over document.</li>
-                  <li lang="ko">설계, 구현, 프로덕션 이관, 운영 인계 문서까지 맡았습니다.</li>
-                </ul></dd>
-              </dl>
-            </details>
-          </article>
-
-          <article class="work">
-            <h3><span lang="en">Team knowledge wiki and agent rules</span><span lang="ko">팀 지식 위키와 에이전트 규칙</span></h3>
-            <p class="meta"><span lang="en">OAO Corp. internship · Aug – Oct 2026</span><span lang="ko">OAO 인턴 · 2026년 8월 ~ 10월</span></p>
-            <p><span lang="en">An LLM-maintained team wiki, then rules for the company's AI agents enforced in code rather than left as a document.</span><span lang="ko">LLM이 유지하는 팀 지식 위키, 그리고 회사 AI 에이전트의 규칙을 문서가 아니라 코드로 강제하는 장치.</span></p>
-            <ul class="pts">
-              <li><span lang="en">Wiki: wrote the proposal and prototype, designed and validated the git sync, ran the company-wide onboarding. The team lead owned the final design.</span><span lang="ko">위키: 제안서와 프로토타입, git 동기화 설계·검증, 전사 온보딩. 본 설계는 팀 리드가 맡았습니다.</span></li>
-              <li><span lang="en">Rules: a sandbox with deny rules, per-agent budgets and a read-only dry run.</span><span lang="ko">규칙: deny 규칙, 에이전트별 예산, 읽기 전용 dry-run을 갖춘 샌드박스.</span></li>
-            </ul>
-            <ul class="tags"><li>Obsidian</li><li>Git hooks</li><li>Python</li><li>Claude Code</li></ul>
-            <p class="repo"><span class="priv"><span lang="en">Company work, not public.</span><span lang="ko">회사 작업이라 공개하지 않습니다.</span></span></p>
-            <details>
-              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
-              <dl>
-                <dt><span lang="en">Constitution</span><span lang="ko">헌법</span></dt>
-                <dd><span lang="en">Did the design, testing and implementation; direction and approval came from the team lead. Tested with dilemma questions whether rule wording changes model decisions, and added a git check that only humans edit the rules.</span><span lang="ko">설계·검증·구현을 맡았고, 방향과 승인은 팀 리드가 했습니다. 딜레마 문항으로 규칙 문장이 모델 판단을 바꾸는지 시험하고, 사람만 규칙을 고쳤는지 확인하는 git 검사를 넣었습니다.</span></dd>
-                <dt><span lang="en">Outcome</span><span lang="ko">결과</span></dt>
-                <dd><span lang="en">Reported the results as they were: the rules changed judgment only on company-specific questions, not general ones. Shared the draft company-wide before the internship ended.</span><span lang="ko">결과는 있는 그대로 보고했습니다. 규칙은 일반 판단이 아니라 회사 고유 기준 문항에서만 차이를 냈습니다. 인턴 종료 전에 초안을 전사에 공유했습니다.</span></dd>
-              </dl>
-            </details>
-          </article>
-
-          <article class="work">
-            <div class="big"><span lang="en">30 → 3 min</span><span lang="ko">30분 → 3분</span><small><span lang="en">to collect, analyse and write one company report</span><span lang="ko">기업 1곳 수집·분석·보고서 작성</span></small></div>
-            <h3><span lang="en">AlphaProbe: multi-agent investment evaluation</span><span lang="ko">알파프로브: 멀티에이전트 투자 평가</span></h3>
-            <p class="meta"><span lang="en">Multicampus bootcamp · Apr – May 2026 · team of 4, team lead</span><span lang="ko">멀티캠퍼스 부트캠프 · 2026년 4 ~ 5월 · 4인 팀, 팀장</span></p>
-            <p><span lang="en">Committee-style multi-agent LLM system that evaluates 30 Korean semiconductor companies. Won “Best Project Team”, and I was named “Best Project Trainee”.</span><span lang="ko">국내 반도체 상장사 30곳을 평가하는 위원회형 멀티에이전트 LLM 시스템. “프로젝트 최우수팀”, 개인 “최우수 훈련생” 수상.</span></p>
-            <ul class="pts">
-              <li><span lang="en">Owned the Market and Issue agents; extended Market from 5 to 30 companies.</span><span lang="ko">Market·Issue 에이전트 담당. Market 대상을 5곳에서 30곳으로 넓혔습니다.</span></li>
-              <li><span lang="en">Backtest: DMA momentum +39% vs +19% simple momentum, before transaction costs.</span><span lang="ko">백테스트: DMA 모멘텀 +39%, 단순 모멘텀 +19%(거래 비용 미반영).</span></li>
-            </ul>
-            <ul class="tags"><li>Python</li><li>LangGraph</li><li>OpenAI API</li><li>Gemini API</li><li>DART API</li><li>SQLite</li></ul>
-            <p class="repo"><a href="https://github.com/Giana0412/jbproject">github.com/Giana0412/jbproject</a></p>
-            <details>
-              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
-              <dl>
-                <dt><span lang="en">How</span><span lang="ko">어떻게</span></dt>
-                <dd><ul>
-                  <li lang="en">Domain agents analyse, an Auditor checks, a Chair combines. Agent weights are updated with Dynamic Model Averaging.</li>
-                  <li lang="ko">도메인 에이전트가 분석하고, Auditor가 검증하고, Chair가 통합합니다. 가중치는 DMA로 갱신합니다.</li>
-                  <li lang="en">Flagged look-ahead bias (no date cut-off) in the data and added a cut-off.</li>
-                  <li lang="ko">날짜 컷오프가 없어 미래 데이터를 읽는 look-ahead bias를 찾아 컷오프를 넣었습니다.</li>
-                  <li lang="en">First author of an abstract on the system, proposing an evidence–contribution agreement (GAA) metric.</li>
-                  <li lang="ko">이 시스템에 대한 초록의 제1저자. 근거-기여도 일치율(GAA) 지표를 제안했습니다.</li>
-                </ul></dd>
-                <dt><span lang="en">After</span><span lang="ko">이후</span></dt>
-                <dd><span lang="en">The team adapted it for the JB Financial Group contest, with me as PM.</span><span lang="ko">같은 팀이 JB금융그룹 공모전용으로 확장했고, 저는 PM을 맡았습니다.</span></dd>
-              </dl>
-            </details>
-          </article>
-
-          <article class="work">
-            <h3>quant_auto</h3>
-            <p class="meta"><span lang="en">Personal project · Aug 2026 – present · built and run alone</span><span lang="ko">개인 프로젝트 · 2026년 8월 ~ · 혼자 만들고 운영</span></p>
-            <p><span lang="en">Market-research pipeline that runs every morning and sends a Telegram briefing before the Korean market opens.</span><span lang="ko">매일 아침 돌아 한국장 개장 전에 텔레그램 브리핑을 보내는 시장 리서치 파이프라인.</span></p>
-            <ul class="pts">
-              <li><span lang="en">Rotation, screening, a 5–7 stock model book and paper tracking that scores its own calls.</span><span lang="ko">로테이션, 스크리닝, 5 ~ 7종목 모델 북, 자기 판단을 채점하는 페이퍼 트래킹.</span></li>
-              <li><span lang="en">Withdrew a backtest-based parameter choice when 12 samples swung with window alignment.</span><span lang="ko">12회 표본이 창 정렬에 따라 흔들리자 백테스트로 고른 파라미터 근거를 철회했습니다.</span></li>
-            </ul>
-            <ul class="tags"><li>Python</li><li>Shell</li><li>launchd</li><li>yfinance</li><li>gs-quant</li><li>Telegram</li></ul>
-            <p class="repo"><a href="https://github.com/Giana0412/quant_auto">github.com/Giana0412/quant_auto</a></p>
-            <details>
-              <summary><span lang="en">More</span><span lang="ko">자세히</span></summary>
-              <dl>
-                <dt><span lang="en">What's in it</span><span lang="ko">들어 있는 것</span></dt>
-                <dd><span lang="en">Archives newsletters, takes a market snapshot, writes the day's conclusions and runs a health check. After a silent failure, evening jobs were chained in order with timeouts and locks, with a watchdog outside the chain.</span><span lang="ko">뉴스레터를 모으고, 시장 스냅샷을 찍고, 오늘의 결론을 쓰고, 헬스체크를 합니다. 조용한 실패를 겪은 뒤 저녁 잡을 타임아웃·락이 있는 순차 체인으로 묶고 체인 밖 감시견을 뒀습니다.</span></dd>
-              </dl>
-            </details>
-          </article>
-
-          <article class="work">
-            <h3><span lang="en">Disclosure Q&amp;A agent</span><span lang="ko">공시 Agent</span></h3>
-            <p class="meta"><span lang="en">10th Mirae Asset Securities AI Festival · Jul – Sep 2026 · team of 2</span><span lang="ko">제10회 미래에셋증권 AI Festival · 2026년 7 ~ 9월 · 2인 팀</span></p>
-            <p><span lang="en">Answers questions about Korean corporate filings with the supporting filing attached, keeping invented numbers out.</span><span lang="ko">기업 공시 질문에 근거 공시를 붙여 답하고, 지어낸 숫자가 들어가지 않게 한 에이전트.</span></p>
-            <ul class="pts">
-              <li><span lang="en">About a quarter of the corpus amended other filings, so filings became a time-ordered ledger of facts.</span><span lang="ko">코퍼스의 약 4분의 1이 정정 공시라, 공시를 시간 순 사실 원장으로 모델링했습니다.</span></li>
-              <li><span lang="en">Planning and PM, plus the deterministic layer: correction chains, SQLite ledger, full-text search.</span><span lang="ko">기획·PM과 결정론 계층 구현: 정정 공시 체인, SQLite 원장, 전문 검색.</span></li>
-            </ul>
-            <ul class="tags"><li>Python</li><li>SQLite FTS5</li><li>HyperCLOVA X</li><li>Docker</li></ul>
-            <p class="repo"><span class="priv"><span lang="en">Repository is private.</span><span lang="ko">저장소는 비공개입니다.</span></span></p>
-          </article>
-
-          <article class="work">
-            <h3>Breathin</h3>
-            <p class="meta"><span lang="en">Korea Tourism Organization data contest · Jul – Sep 2026 · team of 4</span><span lang="ko">한국관광공사 관광데이터 활용 공모전 · 2026년 7 ~ 9월 · 4인 팀</span></p>
-            <p><span lang="en">Outdoor travel app for trails reachable by public transport, with missions and badges. I wrote the spec and shipped it.</span><span lang="ko">대중교통으로 갈 수 있는 산·숲길을 미션·배지와 함께 추천하는 앱. 기능명세서를 쓰고 배포했습니다.</span></p>
-            <ul class="pts">
-              <li><span lang="en">Final feature spec, reward policy, 30-mission dataset.</span><span lang="ko">최종 기능명세서, 보상 정책, 미션 데이터 30개.</span></li>
-              <li><span lang="en">Tested every backend API, deployed to AWS EC2, and switched to a web release when app review needed a location-service filing.</span><span lang="ko">백엔드 API 전수 테스트, AWS EC2 배포, 앱 심사에 위치정보 신고가 필요해지자 웹 출시로 전환.</span></li>
-            </ul>
-            <ul class="tags"><li>Expo</li><li>TypeScript</li><li>Spring Boot</li><li>MySQL</li><li>AWS EC2</li></ul>
-            <p class="repo"><span class="priv"><span lang="en">Repository is private.</span><span lang="ko">저장소는 비공개입니다.</span></span></p>
-          </article>
-        </div>
-        <ul class="log">
-          <li><span class="d"><span lang="en">Jun – Oct 2026</span><span lang="ko">2026.06 ~ 10</span></span><div><b>OAO Corp.</b> · <span class="r"><span lang="en">Product Staff (Intern)</span><span lang="ko">Product Staff (인턴)</span></span><p><span lang="en">Full-time in Seoul over the summer, then remote part-time from Hong Kong from mid-September.</span><span lang="ko">여름에는 서울에서 풀타임, 9월 중순부터는 홍콩에서 원격 파트타임.</span></p></div></li>
-          <li><span class="d"><span lang="en">Dec 2025 – Jun 2026</span><span lang="ko">2025.12 ~ 2026.06</span></span><div><b><span lang="en">Multicampus Financial Data Analysis Bootcamp</span><span lang="ko">멀티캠퍼스 금융데이터분석 부트캠프</span></b> · <span class="r"><span lang="en">829 hours</span><span lang="ko">829시간</span></span><p><span lang="en">Statistics, machine learning, time series, NLP, LLM agents (LangChain, LangGraph), quant strategy.</span><span lang="ko">통계, 머신러닝, 시계열, NLP, LLM 에이전트(LangChain, LangGraph), 퀀트 전략.</span></p></div></li>
-          <li><span class="d"><span lang="en">Jun 2026</span><span lang="ko">2026.06</span></span><div><b><a href="https://github.com/Giana0412/jungo-chatbot"><span lang="en">Character chatbot consistency test</span><span lang="ko">캐릭터 챗봇 일관성 실험</span></a></b><p><span lang="en">30 automated scenarios scored consistent / awkward / broken (67% / 30% / 3%), iterated v1 → v3.</span><span lang="ko">30개 시나리오를 일관 / 어색 / 붕괴(67% / 30% / 3%)로 자동 집계하고 v1 → v3로 고쳤습니다.</span></p></div></li>
-          <li><span class="d"><span lang="en">Mar 2026</span><span lang="ko">2026.03</span></span><div><b><span lang="en">Multi-agent quant backtesting</span><span lang="ko">멀티에이전트 퀀트 백테스팅</span></b><p><span lang="en">Natural-language strategy → generated backtest → analysis → human-approved improvement → report.</span><span lang="ko">자연어 전략 → 백테스트 생성·실행 → 분석 → 사람 승인 개선 → 리포트.</span></p></div></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Hong Kong, now -->
-    <section class="stop gut" id="hongkong-now" data-city="hk" data-name-en="Hong Kong, now" data-name-ko="다시 홍콩">
-      <div class="wrap">
-        <h2><span lang="en">Hong Kong, again</span><span lang="ko">다시, 홍콩</span></h2>
-        <span class="when"><span lang="en">Sep 2026 – · final year</span><span lang="ko">2026.09 – · 마지막 학년</span></span>
-        <p class="intro"><span lang="en">Back at HKUST for the last stretch, teaching a coding lab and building on my own again.</span><span lang="ko">마지막 구간을 위해 HKUST로 돌아왔습니다. 코딩 수업 조교를 하면서 다시 혼자 만들고 있습니다.</span></p>
-        <div class="works">
-          <article class="work">
-            <div class="big"><span lang="en">Top 10%</span><span lang="ko">상위 10%</span><small><span lang="en">of 2,916 entrants, solo</span><span lang="ko">참가자 2,916명 중, 개인 참가</span></small></div>
-            <h3>Aurora Decision Desk</h3>
-            <p class="meta"><span lang="en">AX Talent War round 1, Samil PwC case · Nov 2026</span><span lang="ko">AX인재전쟁 온라인 1회차, 삼일PwC 출제 · 2026년 11월</span></p>
-            <p><span lang="en">Approval tool for sales-incentive payouts: the rule engine calculates, AI explains, people approve.</span><span lang="ko">판매장려금 지급 승인 도구. 계산은 규칙 엔진이, 설명은 AI가, 승인은 사람이 합니다.</span></p>
-            <ul class="pts">
-              <li><span lang="en">AI text that cites a number the engine did not produce is discarded (61 of 61 passed).</span><span lang="ko">엔진에 없는 숫자를 쓴 AI 문안은 버립니다(61개 중 61개 통과).</span></li>
-              <li><span lang="en">63 golden tests fix the key figures; source data is pinned by sha256.</span><span lang="ko">골든 테스트 63개로 핵심 숫자를 고정하고, 원본은 sha256으로 고정했습니다.</span></li>
-            </ul>
-            <ul class="tags"><li>Node.js</li><li>Postgres</li><li>Anthropic API</li><li>Claude Code</li></ul>
-            <p class="repo"><a href="aurora-decision-desk.html"><span lang="en">Read the case study →</span><span lang="ko">케이스 스터디 보기 →</span></a> · <a href="https://aurora-decision-desk-pvfi.axhub.app"><span lang="en">Live app</span><span lang="ko">배포 앱</span></a> · <a href="https://axacademy.ai/axwar/cert/KYoa614kNjyVQr7mn4xbeoec"><span lang="en">Certificate</span><span lang="ko">인증서</span></a></p>
-          </article>
-          <article class="work">
-            <h3><span lang="en">Trading team chart app</span><span lang="ko">트레이딩 팀 차트 앱</span></h3>
-            <p class="meta"><span lang="en">Bloomberg Trading Challenge · Sep – Nov 2026 · team of 3</span><span lang="ko">Bloomberg Trading Challenge · 2026년 9 ~ 11월 · 3인 팀</span></p>
-            <p><span lang="en">Streamlit app for my team: charts with stop levels, portfolio tracker, earnings radar and a chatbot.</span><span lang="ko">팀용 Streamlit 앱: 손절가가 붙은 차트, 포트폴리오 트래커, 실적 레이더, 챗봇.</span></p>
-            <ul class="pts">
-              <li><span lang="en">Trades told to the chatbot reach Google Sheets only after a person confirms.</span><span lang="ko">챗봇 거래 기록은 사람이 확인해야 Google Sheets에 들어갑니다.</span></li>
-              <li><span lang="en">Turned team decisions into screener rules and kept a decision log.</span><span lang="ko">팀 결정을 스크리너 규칙으로 옮기고 결정 로그를 남겼습니다.</span></li>
-            </ul>
-            <ul class="tags"><li>Python</li><li>Streamlit</li><li>Google Sheets</li><li>Gemini API</li></ul>
-            <p class="repo"><a href="https://github.com/Giana0412/bloomberg-chart-app">github.com/Giana0412/bloomberg-chart-app</a></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="next gut" aria-labelledby="next-h">
-      <div class="wrap">
-        <div class="ticket">
-          <div>
-            <span class="k"><span lang="en">Next stop</span><span lang="ko">다음 정거장</span></span>
-            <h2 id="next-h">Manulife</h2>
-            <p><span lang="en">Co-op, Tech Placement Program · Digital Platforms, Hong Kong</span><span lang="ko">Co-op, Tech Placement Program · Digital Platforms, 홍콩</span></p>
-          </div>
-          <div class="dt"><span lang="en">Jan – Jul 2027</span><span lang="ko">2027.01 – 07</span><small><span lang="en">then graduation, Dec 2027</span><span lang="ko">이후 2027년 12월 졸업</span></small></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="end gut">
-      <div class="wrap">
-        <div id="skills">
-          <h2><span lang="en">What I work with</span><span lang="ko">쓰는 도구</span></h2>
-          <dl class="skills">
-            <div><dt><span lang="en">AI and agents</span><span lang="ko">AI·에이전트</span></dt><dd><span lang="en">LLM pipelines and multi-agent systems, LangGraph / LangChain, OpenAI, Anthropic, Gemini and HyperCLOVA X APIs, evaluation harnesses, Claude Code</span><span lang="ko">LLM 파이프라인과 멀티에이전트 시스템, LangGraph / LangChain, OpenAI·Anthropic·Gemini·HyperCLOVA X API, 평가 하네스, Claude Code</span></dd></div>
-            <div><dt><span lang="en">Engineering</span><span lang="ko">엔지니어링</span></dt><dd><span lang="en">Python, Shell, SQLite, Postgres, Git, Docker, AWS EC2, Streamlit, launchd / cron scheduling</span><span lang="ko">Python, Shell, SQLite, Postgres, Git, Docker, AWS EC2, Streamlit, launchd / cron 스케줄링</span></dd></div>
-            <div><dt><span lang="en">Data and finance</span><span lang="ko">데이터·금융</span></dt><dd><span lang="en">pandas, statsmodels, random forest, XGBoost, time series, backtesting, yfinance, gs-quant, DART filings</span><span lang="ko">pandas, statsmodels, 랜덤 포레스트, XGBoost, 시계열, 백테스트, yfinance, gs-quant, DART 공시</span></dd></div>
-            <div><dt><span lang="en">Product</span><span lang="ko">기획</span></dt><dd><span lang="en">Feature specs, user flows, reward and pricing design, meeting facilitation and written decision records, Figma, Canva</span><span lang="ko">기능명세서, 유저 플로우, 보상·가격 설계, 회의 진행과 결정 기록, Figma, Canva</span></dd></div>
-            <div><dt><span lang="en">Languages</span><span lang="ko">언어</span></dt><dd><span lang="en">Korean (native), English (TOEIC 910), French (DELF B2), Chinese (basic)</span><span lang="ko">한국어(모국어), 영어(TOEIC 910), 프랑스어(DELF B2), 중국어(기초)</span></dd></div>
-          </dl>
-        </div>
-        <div id="contact" class="contact">
-          <h2><span lang="en">Say hello</span><span lang="ko">연락</span></h2>
-          <p><span lang="en">Open to roles in AI automation, product and data. Email is the fastest way to reach me.</span><span lang="ko">AI 자동화, 기획, 데이터 분야의 기회에 열려 있습니다. 이메일이 가장 빠릅니다.</span></p>
-          <ul>
-            <li><a href="mailto:gyuhyeongkim412@gmail.com">gyuhyeongkim412@gmail.com</a></li>
-            <li><a href="https://github.com/Giana0412">github.com/Giana0412</a></li>
-            <li><a href="https://www.linkedin.com/in/gyuhyeong-kim">linkedin.com/in/gyuhyeong-kim</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <main class="track" id="track" aria-live="polite">
+    <svg class="route" id="route" aria-hidden="true"></svg>
   </main>
 
-  <footer class="gut"><div class="wrap"><span lang="en">© 2026 Gyuhyeong Kim</span><span lang="ko">© 2026 김규형</span></div></footer>
+  <button class="edge prev" id="prev" type="button" aria-label="Previous stop"><span></span></button>
+  <button class="edge next" id="next" type="button"><span id="next-label"></span></button>
 
+  <div class="doc" id="doc" hidden role="dialog" aria-modal="true" aria-labelledby="doc-title"></div>
+
+  <script src="data.js"></script>
   <script>
   {
     const root = document.documentElement;
-    const NS = "http://www.w3.org/2000/svg";
-    const lanes = [
-      { k: "pa", en: "Paris", ko: "파리" },
-      { k: "ch", en: "Switzerland", ko: "스위스" },
-      { k: "qd", en: "Qingdao", ko: "칭다오" },
-      { k: "kr", en: "Korea", ko: "한국" },
-      { k: "hk", en: "Hong Kong", ko: "홍콩" }
-    ];
-    const stops = [
-      { k: "kr", id: "jeju", en: ["Jeju", "2004"], ko: ["제주", "2004"] },
-      { k: "ch", id: "switzerland", en: ["Switzerland", "Grades 3–5"], ko: ["스위스", "초3–5"] },
-      { k: "qd", id: "qingdao", en: ["Qingdao", "Grades 6–8"], ko: ["칭다오", "초6–중2"] },
-      { k: "kr", id: "jeju-again", en: ["Jeju", "Middle school"], ko: ["제주", "중학교"] },
-      { k: "pa", id: "paris", en: ["Paris", "2020–23"], ko: ["파리", "2020–23"] },
-      { k: "hk", id: "hongkong", en: ["Hong Kong", "2023–25"], ko: ["홍콩", "2023–25"] },
-      { k: "kr", id: "seoul", en: ["Seoul", "2025–26"], ko: ["서울", "2025–26"] },
-      { k: "hk", id: "hongkong-now", en: ["Hong Kong", "2026–"], ko: ["홍콩", "2026–"] }
-    ];
-    const box = document.getElementById("map");
-    const laneIx = k => lanes.findIndex(l => l.k === k);
-    const el = (tag, attrs, text) => {
-      const n = document.createElementNS(NS, tag);
-      for (const a in attrs) n.setAttribute(a, attrs[a]);
-      if (text != null) n.textContent = text;
-      return n;
+    const R = window.ROUTE, SK = window.SKILLS;
+    const L = () => (root.lang === "ko" ? "ko" : "en");
+    const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const tx = o => (o == null ? "" : esc(typeof o === "string" ? o : o[L()]));
+    const UI = {
+      name: { en: "Gyuhyeong Kim", ko: "김규형" },
+      contact: { en: "Contact", ko: "연락" },
+      lang: { en: "한국어", ko: "English" },
+      stop: { en: "Stop", ko: "정거장" },
+      open: { en: "Open file →", ko: "파일 열기 →" },
+      next: { en: "Next", ko: "다음" },
+      prevf: { en: "← Previous file", ko: "← 이전 파일" },
+      nextf: { en: "Next file →", ko: "다음 파일 →" },
+      close: { en: "Close ✕", ko: "닫기 ✕" },
+      period: { en: "Period", ko: "기간" },
+      where: { en: "Filed under", ko: "보관 위치" },
+      ctx: { en: "Context", ko: "맥락" },
+      end: { en: "End of the line", ko: "종착역" },
+      lede: { en: "I build AI agents and automation that take repetitive work off people's hands, mostly in finance and operations, and I make sure the numbers can be checked.", ko: "반복되는 일을 AI 에이전트와 자동화로 바꾸는 일을 합니다. 주로 금융과 운영 분야이고, 숫자는 언제나 확인할 수 있게 만듭니다." },
+      facts: { en: "BBA Information Systems, HKUST · graduating Dec 2027<br>Korean · English · French · Chinese (basic)", ko: "HKUST 경영학부 정보시스템 전공 · 2027년 12월 졸업 예정<br>한국어 · 영어 · 프랑스어 · 중국어(기초)" },
+      howto: { en: "This is an archive along my route. Move to the right edge, press → or swipe to travel. Click a folder tab to open it.", ko: "제가 지나온 노선을 따라 정리한 아카이브입니다. 오른쪽 끝에 마우스를 대거나 → 키, 스와이프로 이동하고, 폴더 탭을 누르면 열립니다." },
+      endIntro: { en: "Open to roles in AI automation, product and data. Email is the fastest way to reach me.", ko: "AI 자동화, 기획, 데이터 분야의 기회에 열려 있습니다. 이메일이 가장 빠릅니다." }
     };
-    let drawn = false;
+    const u = k => esc(UI[k][L()]);
+    const lanes = [
+      { k: "pa", en: "Paris", ko: "파리" }, { k: "ch", en: "Switzerland", ko: "스위스" },
+      { k: "qd", en: "Qingdao", ko: "칭다오" }, { k: "kr", en: "Korea", ko: "한국" }, { k: "hk", en: "Hong Kong", ko: "홍콩" }
+    ];
+    const PAL = [["#6d1f55", "#fff"], ["#e2692b", "#fff"], ["#2f7d6d", "#fff"], ["#cf3a2f", "#fff"], ["#55267a", "#fff"], ["#3157d6", "#fff"], ["#bf5b8f", "#fff"], ["#f1d94a", "#1b1b1b"], ["#1f6f8b", "#fff"], ["#2b2b2b", "#fff"]];
+    const FEAT = [["aurora", { en: "Top 10% of 2,916", ko: "2,916명 중 상위 10%" }], ["alphaprobe", { en: "30 → 3 min, Best Team", ko: "30분 → 3분, 최우수팀" }], ["pipeline", { en: "Ran in production", ko: "프로덕션 운영" }]];
 
-    function draw() {
-      const W = box.clientWidth, H = box.clientHeight, L = root.lang === "ko" ? "ko" : "en";
-      const vertical = W < 640;
-      const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, "aria-hidden": "true" });
-      let pos;
-      if (!vertical) {
-        const top = 64, bot = H - 24, left = 110, right = W - 70;
-        const ly = i => top + i * (bot - top) / (lanes.length - 1);
-        lanes.forEach((l, i) => {
-          svg.append(el("line", { class: "lane", x1: 0, x2: W, y1: ly(i), y2: ly(i) }));
-          svg.append(el("text", { class: "lanelab", x: 0, y: ly(i) - 8 }, l[L]));
-        });
-        pos = stops.map((s, i) => ({ x: left + i * (right - left) / (stops.length - 1), y: ly(laneIx(s.k)) }));
-      } else {
-        const top = 24, bot = H - 40, left = 18, gap = 30;
-        const lx = i => left + i * gap;
-        const rows = stops.length;
-        pos = stops.map((s, i) => ({ x: lx(laneIx(s.k)), y: top + i * (bot - top) / (rows - 1) }));
-        lanes.forEach((l, i) => svg.append(el("line", { class: "lane", x1: lx(i), x2: lx(i), y1: 0, y2: H })));
-      }
-      // segments, coloured by where they leave from
-      for (let i = 0; i < pos.length - 1; i++) {
-        const a = pos[i], b = pos[i + 1];
-        let d;
-        if (!vertical) {
-          const g = (b.x - a.x) * 0.28;
-          d = `M${a.x} ${a.y} H${a.x + g} L${b.x - g} ${b.y} H${b.x}`;
-        } else {
-          const g = (b.y - a.y) * 0.28;
-          d = `M${a.x} ${a.y} V${a.y + g} L${b.x} ${b.y - g} V${b.y}`;
-        }
-        const p = el("path", { class: "seg", d, stroke: `var(--${stops[i].k})` });
-        svg.append(p);
-      }
-      // dashed tail to the next stop
-      const last = pos[pos.length - 1];
-      svg.append(el("path", { class: "tail", stroke: "var(--hk)", d: vertical ? `M${last.x} ${last.y} V${H}` : `M${last.x} ${last.y} H${W}` }));
-      if (!vertical) svg.append(el("text", { class: "when", x: W, y: last.y + 22, "text-anchor": "end" }, L === "ko" ? "2027 →" : "2027 →"));
-      // stations
-      stops.forEach((s, i) => {
-        const p = pos[i];
-        const g = el("g", { class: "stn", tabindex: 0, role: "link", "aria-label": s[L][0], style: `--sc:var(--${s.k})` });
-        g.append(el("circle", { cx: p.x, cy: p.y, r: vertical ? 9 : 11, stroke: `var(--${s.k})` }));
-        if (!vertical) {
-          g.append(el("text", { class: "city", x: p.x, y: p.y - 34, "text-anchor": "middle" }, s[L][0]));
-          g.append(el("text", { class: "when", x: p.x, y: p.y - 18, "text-anchor": "middle" }, s[L][1]));
-        } else {
-          const tx = 18 + (lanes.length - 1) * 30 + 30;
-          g.append(el("text", { class: "city", x: tx, y: p.y + 1 }, s[L][0]));
-          g.append(el("text", { class: "when", x: tx, y: p.y + 19 }, s[L][1]));
-        }
-        const go = () => document.getElementById(s.id).scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
-        g.addEventListener("click", go);
-        g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
-        svg.append(g);
+    // flat list of files with their stop and colour
+    const FILES = [];
+    R.forEach((s, si) => s.files.forEach((f, fi) => FILES.push({ f, s, si, col: fi % 3, pal: PAL[FILES.length % PAL.length] })));
+    const byId = id => FILES.find(x => x.f.id === id);
+
+    const track = document.getElementById("track");
+    const svg = document.getElementById("route");
+    const N = R.length + 1; // + end panel
+    let cur = 0, tgt = 0;
+
+    const tabShape = '<svg viewBox="0 0 300 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 48 C20 48 18 0 44 0 H256 C282 0 280 48 300 48 Z"/></svg>';
+
+    function folderHTML(x, open) {
+      const f = x.f;
+      return `<div class="folder${open ? " open" : ""}" id="fd-${f.id}" style="--fb:${x.pal[0]};--fi:${x.pal[1]};--col:${x.col}">
+        <button class="tab" type="button" aria-expanded="${open ? "true" : "false"}" aria-controls="fb-${f.id}">${tabShape}<span>${tx(f.tab || f.title)}</span></button>
+        <div class="fbody" id="fb-${f.id}"><div><div class="finner">
+          <span class="no">${esc(f.no)}</span><p class="sm">${tx(f.summary)}</p><span class="dt">${tx(f.date)}</span>
+          <button class="op" type="button" data-open="${f.id}">${u("open")}</button>
+        </div></div></div>
+      </div>`;
+    }
+
+    function panelHTML(s, i) {
+      const files = FILES.filter(x => x.si === i).map((x, j) => folderHTML(x, j === 0)).join("");
+      const stopHead = `<span class="k">${u("stop")} ${i + 1} · ${tx(s.when)}</span>
+        <h2>${tx(s.city)}</h2><p class="place">${tx(s.place)}</p><p class="intro">${tx(s.intro)}</p>`;
+      const head = i === 0
+        ? `<div class="head hello"><h1>${u("name")}</h1><p class="lede">${u("lede")}</p><p class="facts">${UI.facts[L()]}<br><a href="mailto:gyuhyeongkim412@gmail.com">gyuhyeongkim412@gmail.com</a> · <a href="https://github.com/Giana0412">GitHub</a> · <a href="https://www.linkedin.com/in/gyuhyeong-kim">LinkedIn</a></p>
+            <div class="feat">${FEAT.map(([id, note]) => `<button type="button" data-open="${id}"><b>${tx(byId(id).f.title)}</b><span>${esc(note[L()])}</span></button>`).join("")}</div>
+            <p class="howto">${u("howto")}</p></div>`
+        : `<div class="head">${stopHead}</div>`;
+      const lead = i === 0 ? `<div class="head stophead">${stopHead}</div>` : "";
+      return `<section class="panel" id="${s.id}" style="--c:var(--${s.lane})" aria-label="${tx(s.city)}">${head}<div class="stack">${lead}${files}</div></section>`;
+    }
+
+    function endHTML() {
+      return `<section class="panel endp" id="contact" style="--c:var(--mute)" aria-label="${u("contact")}">
+        <div class="head"><span class="k">${u("end")}</span><h2>${u("contact")}</h2><p class="intro">${u("endIntro")}</p>
+          <p class="contact"><a href="mailto:gyuhyeongkim412@gmail.com">gyuhyeongkim412@gmail.com</a><br><a href="https://github.com/Giana0412">github.com/Giana0412</a><br><a href="https://www.linkedin.com/in/gyuhyeong-kim">linkedin.com/in/gyuhyeong-kim</a></p></div>
+        <dl class="skills">${SK.map(([a, b]) => `<div><dt>${tx(a)}</dt><dd>${tx(b)}</dd></div>`).join("")}</dl>
+      </section>`;
+    }
+
+    function render() {
+      track.querySelectorAll(".panel").forEach(p => p.remove());
+      track.insertAdjacentHTML("beforeend", R.map(panelHTML).join("") + endHTML());
+      document.querySelector(".nm").textContent = UI.name[L()];
+      document.getElementById("to-contact").textContent = UI.contact[L()];
+      const lt = document.getElementById("lang-toggle");
+      lt.textContent = UI.lang[L()];
+      lt.setAttribute("aria-label", L() === "ko" ? "View in English" : "한국어로 보기");
+      document.title = UI.name[L()];
+      document.getElementById("dots").innerHTML =
+        R.map((s, i) => `<li class="${s.next ? "dash" : ""}"><button type="button" data-go="${i}" style="--c:var(--${s.lane})" aria-label="${tx(s.city)}"></button></li>`).join("") +
+        `<li><button type="button" class="sq" data-go="${N - 1}" style="--c:var(--mute)" aria-label="${u("contact")}"></button></li>`;
+      drawRoute();
+      mark();
+    }
+
+    function drawRoute() {
+      const W = track.clientWidth, Hb = W <= 800 ? 130 : 150;
+      const gx = Math.max(W * 0.04, 16);
+      const ly = k => 26 + lanes.findIndex(l => l.k === k) * (Hb - 46) / (lanes.length - 1);
+      const sx = i => i * W + gx + 9;
+      let h = "";
+      for (let p = 0; p < N; p++) lanes.forEach(l => {
+        h += `<line class="lane" x1="${p * W}" x2="${(p + 1) * W}" y1="${ly(l.k)}" y2="${ly(l.k)}"/>`;
       });
-      box.replaceChildren(svg);
-      // draw-in on first render only
-      svg.querySelectorAll(".seg").forEach((p, i) => {
-        const len = Math.ceil(p.getTotalLength());
-        if (drawn) { p.style.animation = "none"; return; }
-        p.style.setProperty("--len", len);
-        p.style.setProperty("--d", (i * 0.35) + "s");
+      if (W > 800) for (let p = 0; p < N; p++) lanes.forEach(l => {
+        h += `<text class="lanelab" x="${(p + 1) * W - gx - 64}" y="${ly(l.k) - 5}" text-anchor="end">${esc(l[L()])}</text>`;
       });
-      drawn = true;
+      R.forEach((s, i) => {
+        const a = { x: sx(i), y: ly(s.lane) };
+        const b = i < R.length - 1 ? { x: sx(i + 1), y: ly(R[i + 1].lane) } : { x: sx(i) + W * 0.7, y: a.y };
+        const bend = a.x + W * 0.58, bend2 = a.x + W * 0.72;
+        const d = `M${a.x} ${a.y} H${bend} L${bend2} ${b.y} H${b.x}`;
+        const dashed = i === R.length - 1 || R[i + 1].next;
+        h += `<path class="${dashed ? "dash" : "seg"}" d="${d}" stroke="var(--${s.lane})"/>`;
+      });
+      R.forEach((s, i) => {
+        const x = sx(i), y = ly(s.lane);
+        h += `<circle cx="${x}" cy="${y}" r="9" stroke="var(--${s.lane})"/>`;
+        h += `<text x="${x + 18}" y="${y - 10}">${esc(s.city[L()].toUpperCase())} · ${esc(s.when[L()])}</text>`;
+      });
+      svg.setAttribute("width", N * W);
+      svg.setAttribute("height", Hb);
+      svg.setAttribute("viewBox", `0 0 ${N * W} ${Hb}`);
+      svg.innerHTML = h;
     }
-    const ro = new ResizeObserver(draw);
-    ro.observe(box);
 
-    // which stop is in view → mini route in the header
-    const here = document.getElementById("here");
-    const minis = [...document.querySelectorAll(".mini a")];
-    const sections = [...document.querySelectorAll(".stop")];
-    let current = null;
-    function mark(sec) {
-      current = sec;
-      minis.forEach(a => a.setAttribute("aria-current", sec && a.getAttribute("href") === "#" + sec.id ? "true" : "false"));
-      here.textContent = sec ? sec.dataset["name" + (root.lang === "ko" ? "Ko" : "En")] : "";
+    // moving between stops
+    const reduce = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function go(i, instant) {
+      tgt = Math.max(0, Math.min(N - 1, i));
+      track.scrollTo({ left: tgt * track.clientWidth, behavior: instant || reduce() ? "auto" : "smooth" });
+      mark(tgt);
     }
-    const io = new IntersectionObserver(entries => {
-      const vis = sections.filter(s => { const r = s.getBoundingClientRect(); return r.top < innerHeight * 0.45 && r.bottom > innerHeight * 0.45; });
-      mark(vis[0] || null);
-    }, { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: "-40% 0px -50% 0px" });
-    sections.forEach(s => io.observe(s));
+    function mark(i = cur) {
+      document.querySelectorAll("#dots button").forEach(b => b.setAttribute("aria-current", +b.dataset.go === i ? "true" : "false"));
+      const nx = document.getElementById("next"), pv = document.getElementById("prev");
+      nx.hidden = i >= N - 1; pv.hidden = i <= 0;
+      const nextName = i + 1 < R.length ? R[i + 1].city[L()] : UI.contact[L()];
+      document.getElementById("next-label").textContent = `${UI.next[L()]} · ${nextName} →`;
+      nx.setAttribute("aria-label", `${UI.next[L()]}: ${nextName}`);
+    }
+    let settle;
+    track.addEventListener("scroll", () => {
+      const i = Math.round(track.scrollLeft / track.clientWidth);
+      if (i !== cur) { cur = i; mark(i); }
+      clearTimeout(settle);
+      settle = setTimeout(() => {
+        tgt = cur;
+        const id = cur < R.length ? R[cur].id : "contact";
+        if (document.getElementById("doc").hidden) history.replaceState(null, "", "#" + id);
+      }, 140);
+    }, { passive: true });
 
-    const btn = document.getElementById("lang-toggle");
-    function sync() {
-      btn.setAttribute("aria-label", root.lang === "ko" ? "View in English" : "한국어로 보기");
-      document.title = root.lang === "ko" ? "김규형" : "Gyuhyeong Kim";
-    }
-    btn.addEventListener("click", () => {
-      root.lang = root.lang === "ko" ? "en" : "ko";
-      try { localStorage.setItem("lang", root.lang); } catch (e) {}
-      sync(); draw(); mark(current);
+    let hover;
+    const nextBtn = document.getElementById("next");
+    nextBtn.addEventListener("mouseenter", () => {
+      const step = () => { if (tgt < N - 1) { go(tgt + 1); hover = setTimeout(step, 1400); } };
+      hover = setTimeout(step, 260);
     });
-    sync();
+    nextBtn.addEventListener("mouseleave", () => clearTimeout(hover));
+    nextBtn.addEventListener("click", () => { clearTimeout(hover); go(tgt + 1); });
+    document.getElementById("prev").addEventListener("click", () => go(tgt - 1));
+    document.getElementById("home").addEventListener("click", () => go(0));
+    document.getElementById("to-contact").addEventListener("click", () => go(N - 1));
+
+    // folders, dots, featured files
+    document.addEventListener("click", e => {
+      const g = e.target.closest("[data-go]");
+      if (g) return go(+g.dataset.go);
+      const o = e.target.closest("[data-open]");
+      if (o) return openDoc(o.dataset.open);
+      const tab = e.target.closest(".tab");
+      if (tab) {
+        const fd = tab.parentElement, open = !fd.classList.contains("open");
+        fd.classList.toggle("open", open);
+        tab.setAttribute("aria-expanded", open);
+      }
+    });
+
+    // document view
+    const doc = document.getElementById("doc");
+    let lastFocus = null, openId = null;
+    function openDoc(id) {
+      const x = byId(id);
+      if (!x) return;
+      const f = x.f, k = FILES.indexOf(x);
+      openId = id;
+      if (doc.hidden) lastFocus = document.activeElement;
+      const secs = (f.sections || []).map(s => `<div class="sec"><h3>${tx(s.h)}</h3>${s.p ? `<p>${tx(s.p)}</p>` : ""}${s.li ? `<ul>${s.li.map(l => `<li>${tx(l)}</li>`).join("")}</ul>` : ""}</div>`).join("");
+      const prev = FILES[k - 1], next = FILES[k + 1];
+      doc.innerHTML = `<div class="sheet" style="--fb:${x.pal[0]};--fi:${x.pal[1]}">
+        <div class="holes" aria-hidden="true"><i></i><i></i><i></i></div>
+        <article class="paper">
+          <span class="stamp">File № ${esc(f.no)}</span>
+          <h2 id="doc-title">${tx(f.title)}</h2>
+          <p class="lead">${tx(f.summary)}</p>
+          <div class="cols">
+            <dl class="notes">
+              <dt>${u("where")}</dt><dd>${tx(x.s.city)} · ${tx(x.s.place)}</dd>
+              <dt>${u("period")}</dt><dd>${tx(f.date)}</dd>
+              ${f.place ? `<dt>${L() === "ko" ? "장소" : "Place"}</dt><dd>${tx(f.place)}</dd>` : ""}
+              ${f.team ? `<dt>${u("ctx")}</dt><dd>${tx(f.team)}</dd>` : ""}
+            </dl>
+            <div>
+              ${f.big ? `<p class="big">${tx(f.big)}</p><p class="bign">${tx(f.bigNote)}</p>` : ""}
+              ${secs}
+              ${f.tags ? `<ul class="ptags">${f.tags.map(g => `<li>${esc(g)}</li>`).join("")}</ul>` : ""}
+              ${f.links ? `<div class="plinks">${f.links.map(l => `<a href="${esc(l.href)}">${tx(l.label)}</a>`).join("")}</div>` : ""}
+              ${f.private ? `<p class="priv">${tx(f.private)}</p>` : ""}
+            </div>
+          </div>
+          <div class="dbar">
+            <button type="button" data-doc="${prev ? prev.f.id : ""}" ${prev ? "" : "disabled"}>${u("prevf")}</button>
+            <span>${k + 1} / ${FILES.length}</span>
+            <button type="button" data-doc="${next ? next.f.id : ""}" ${next ? "" : "disabled"}>${u("nextf")}</button>
+          </div>
+        </article>
+        <div class="spine" aria-hidden="true"><span>${tx(f.title)}</span></div>
+        <button class="close" type="button" id="doc-close">${u("close")}</button>
+      </div>`;
+      doc.hidden = false;
+      doc.scrollTop = 0;
+      if (x.si !== cur) go(x.si, true);
+      history.replaceState(null, "", "#" + id);
+      document.getElementById("doc-close").focus();
+    }
+    function closeDoc() {
+      doc.hidden = true; openId = null;
+      history.replaceState(null, "", "#" + (cur < R.length ? R[cur].id : "contact"));
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    doc.addEventListener("click", e => {
+      if (e.target === doc || e.target.id === "doc-close") return closeDoc();
+      const d = e.target.closest("[data-doc]");
+      if (d && d.dataset.doc) openDoc(d.dataset.doc);
+    });
+
+    document.addEventListener("keydown", e => {
+      if (!doc.hidden) {
+        if (e.key === "Escape") closeDoc();
+        else if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+          const k = FILES.indexOf(byId(openId)) + (e.key === "ArrowRight" ? 1 : -1);
+          if (FILES[k]) openDoc(FILES[k].f.id);
+        }
+        return;
+      }
+      if (e.target.closest("input,textarea")) return;
+      if (e.key === "ArrowRight") { e.preventDefault(); go(tgt + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); go(tgt - 1); }
+    });
+
+    document.getElementById("lang-toggle").addEventListener("click", () => {
+      root.lang = L() === "ko" ? "en" : "ko";
+      try { localStorage.setItem("lang", root.lang); } catch (e) {}
+      const keep = cur, od = openId;
+      render();
+      track.scrollLeft = keep * track.clientWidth;
+      if (od) openDoc(od);
+    });
+
+    const ro = new ResizeObserver(() => { drawRoute(); track.scrollLeft = cur * track.clientWidth; });
+    ro.observe(track);
+
+    render();
+    const h = decodeURIComponent(location.hash.slice(1));
+    const si = R.findIndex(s => s.id === h);
+    if (si >= 0) go(si, true);
+    else if (h === "contact") go(N - 1, true);
+    else if (byId(h)) openDoc(h);
   }
   </script>
 </body>
