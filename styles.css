@@ -1,29 +1,30 @@
+/* Used by the case-study page; tokens follow the journey-map site (site.css). */
 :root {
-  --bg: #fbfaf7;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --text: #1c1b19;
-  --muted: #5c5a55;
-  --line: #e4e1da;
-  --accent: #1f5f8b;
-  --accent-soft: #e8f0f6;
-  --tag-bg: #f1efe9;
+  --text: #121212;
+  --muted: #5f6266;
+  --line: #e7e7e4;
+  --accent: #d4233a;
+  --accent-soft: #fbeaec;
+  --tag-bg: #f5f5f2;
   --maxw: 1080px;
   --measure: 70ch;
   --sans: "IBM Plex Sans", "IBM Plex Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --serif: "Source Serif 4", Georgia, "Noto Serif KR", serif;
+  --serif: "Archivo", "IBM Plex Sans KR", system-ui, sans-serif;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #141413;
-    --surface: #1c1c1a;
-    --text: #ecebe6;
-    --muted: #a9a69e;
-    --line: #2f2e2b;
-    --accent: #8cc3eb;
-    --accent-soft: #1d2a34;
-    --tag-bg: #262522;
+    --bg: #111214;
+    --surface: #1a1c1f;
+    --text: #f1f1ef;
+    --muted: #a4a7ab;
+    --line: #2a2c30;
+    --accent: #ff6074;
+    --accent-soft: #2a1a1d;
+    --tag-bg: #1a1c1f;
     color-scheme: dark;
   }
 }
